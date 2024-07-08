@@ -12,6 +12,8 @@ const Home = () => {
         <a href="/video">Watch video</a>
       </div>
       </main>
+      <WhatWeDo />
+
     </>
     
     
