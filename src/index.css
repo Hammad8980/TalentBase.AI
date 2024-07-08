@@ -1,5 +1,5 @@
 .App {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
   }
   
   .App-header {
@@ -11,9 +11,12 @@
     color: white;
   }
   .navbar-brand {
+    font-style: oblique;
+    font-weight: 600;
     margin-right: auto;
   }
-
+  
+  
   .App-nav ul {
     list-style: none;
     display: flex;
@@ -29,31 +32,44 @@
   .App-main {
     display: flex;                
     flex-direction: column;       
-    align-items: center;         
+    align-items: flex-start;         
     justify-content: center;      
     background-color: #009691;    
     height: 500px;              
-    text-align: center;          
+    text-align: center;
+    padding-left: 3%;  
+    gap: 30px;        
   }
   
   
   .App-main h1 {
-    font-size: 2em;
+    text-shadow: 1px 1px #000000;
+    font-size: 2.3em;
     font-style: italic;
     color: white;
+    gap: 20px;
   }
   
+  .App-main a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .App-main span {
+    color: white;
+  }
+
   .App-buttons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
   }
   
   .start-button {
-    background-color: #FF7043; /* Match the button color */
+    background-color: #eb7734; /* Match the button color */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 50px;
     cursor: pointer;
     font-size: 1em;
   }
