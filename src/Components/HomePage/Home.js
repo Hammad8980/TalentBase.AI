@@ -1,7 +1,9 @@
 import React from 'react'
+import WhatWeDo from './WhatWeDo';
 
 const Home = () => {
   return (
+    <>
     <main className="App-main">
                     <h1>Let us Build Brands together shall we?</h1>
                 <div className="App-buttons">
@@ -10,6 +12,9 @@ const Home = () => {
                     <a href="/video">Watch video</a>
                 </div>
     </main>
+    <WhatWeDo />
+    </>
+    
     
   )
 }

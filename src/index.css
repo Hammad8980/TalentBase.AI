@@ -13,8 +13,7 @@
   .navbar-brand {
     margin-right: auto;
   }
-  
-  
+
   .App-nav ul {
     list-style: none;
     display: flex;
@@ -64,7 +63,6 @@
   }
   
   a {
-    color: white;
     text-decoration: none;
     font-size: 1em;
   }
