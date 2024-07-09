@@ -3,17 +3,17 @@ import TalentBase from './TalentBase'
 
 const WhatWeDo = () => {
   return (
-    <>
-        <div>
-            <h4>What we do</h4>
-            <p>loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf</p>
-        </div>
-        <div>
-            <TalentBase Data={"1sjkg kjghgajkglasj fgsf gkgsjg fflkJFKglflJ FLV FFVJFGfJFVJHFGK;hf.kvljb\,flJFKljM\VG,SVFLJGSLF AS,FV,NFLJFG LJS FKASB F.MASB G.,BGJLS KS G.A GKh ;g .KVKh g;kJG;KJg "} />
-            <TalentBase Data={"2sjkg kjghgajkglasj fgsf gkgsjg fflkJFKglflJ FLV FFVJFGfJFVJHFGK;hf.kvljb\,flJFKljM\VG,SVFLJGSLF AS,FV,NFLJFG LJS FKASB F.MASB G.,BGJLS KS G.A GKh ;g .KVKh g;kJG;KJg "} />
-            <TalentBase Data={"3sjkg kjghgajkglasj fgsf gkgsjg fflkJFKglflJ FLV FFVJFGfJFVJHFGK;hf.kvljb\,flJFKljM\VG,SVFLJGSLF AS,FV,NFLJFG LJS FKASB F.MASB G.,BGJLS KS G.A GKh ;g .KVKh g;kJG;KJg "} />
-        </div>
-    </>
+    <div className="WhatWeDo SidePadding">
+      <div className="WhatWeDoDiv1">
+        <p className='SidePadding WhatWeDoDiv1P1'>What we do</p>
+        <p className='WhatWeDoDiv1P2'>loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf</p>
+      </div>
+      <div className="WhatWeDoDiv2">
+        <TalentBase Data={"Trees are our best friends because they clean the air we breathe. Likewise, they also clean the water and soil and ultimately make the earth a better place. It is also a fact that people who live near trees are healthier, fit, and happier than people who do not."} />
+        <TalentBase Data={"Moreover, it is our responsibility to look after our friends who serve us in many ways. Most importantly by saving plants, we are not doing any favor to plants but to ourselves only. Because trees and plants life does not depend on us but our lives depend on them. "} />
+        <TalentBase Data={"Trees are important to us in a lot of ways and we cannot ignore their importance. They are important because they give us fresh air to breathe, food to eat and shelter/shade from sunlight and rainfall. Besides this, there are many medicines in the market that are made up of trees extracts. Apart from this, there are plants and trees that have medicinal value."} />
+      </div>
+    </div>
   )
 }
 

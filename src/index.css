@@ -86,4 +86,48 @@
   a:hover {
     text-decoration: underline;
   }
+
+  .WhatWeDo {
+    background-color: rgb(207, 191, 191);
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
   
+
+  .SidePadding {
+    padding-left: 3%;
+  }
+
+  .TalentBaseComp {
+    width: 350px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.WhatWeDoDiv1 {
+  width: 50%;
+  margin-bottom: 15%;
+  overflow: hidden;
+}
+
+.WhatWeDoDiv1P1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.WhatWeDoDiv1P2 {
+  font-size: 1.5rem;
+}
+
+.WhatWeDoDiv2 {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+}
