@@ -3,7 +3,7 @@ import Home from './Components/HomePage/Home';
 import Enterprise from './Components/Enterprise';
 import Students from './Components/Students';
 import About from './Components/About';
-import Blog from './Components/Blog';
+import Blog from './Components/BlogPage/Blog';
 import TNSFS from './Components/TNSFS';
 import Contact from './Components/Contact';
 import Missing from './Components/Missing';
