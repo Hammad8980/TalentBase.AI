@@ -1,5 +1,6 @@
 import React from 'react'
-import WhatWeDo from './WhatWeDo';
+import WhatWeDo from './WhatWeDo/WhatWeDo';
+import Testimonials from './Testimonials/Testimonials';
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       </div>
       </main>
       <WhatWeDo />
-
+      <Testimonials />
     </>
     
     

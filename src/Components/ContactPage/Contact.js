@@ -7,7 +7,7 @@ const Contact = () => {
         <p className='BlogDiv1P1'>Contact Us<span className='' style={{color: '#ff7f50'}}>.</span></p>
       </div>
       <div className="BlogDiv2">
-        <form onSubmit={}>
+        <form>
           <label>
             
           </label>
