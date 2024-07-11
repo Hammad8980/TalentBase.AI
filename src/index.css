@@ -10,6 +10,13 @@
   background-color: #ff7f50;
 }
 
+.CompMargin {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 1%;
+}
+
 @font-face {
   font-family: "Ubuntu";
   src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
@@ -114,7 +121,6 @@ a:hover {
 }
 
 .WhatWeDo {
-  width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
