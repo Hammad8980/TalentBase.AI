@@ -2,6 +2,7 @@ import React from 'react'
 import WhatWeDo from './WhatWeDo/WhatWeDo';
 import Testimonials from './Testimonials/Testimonials';
 import Blog from '../BlogPage/Blog';
+import Newsletter from './NewsLetter/NewsLetter';
 import Footer from './Footer/Footer';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <WhatWeDo />
       <Testimonials />
       <Blog/>
+      <Newsletter />
       <Footer />
     </>
     

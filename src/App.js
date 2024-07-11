@@ -1,6 +1,6 @@
 import Navbar from './Components/NavBar';
 import Home from './Components/HomePage/Home';
-import Enterprise from './Components/Enterprise';
+import Enterprise from './Components/EnterprisePage/Enterprise';
 import Students from './Components/Students';
 import About from './Components/About';
 import Blog from './Components/BlogPage/Blog';
