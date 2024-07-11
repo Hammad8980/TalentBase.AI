@@ -1,6 +1,7 @@
 import React from 'react'
 import WhatWeDo from './WhatWeDo/WhatWeDo';
 import Testimonials from './Testimonials/Testimonials';
+import Blog from '../BlogPage/Blog';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </main>
       <WhatWeDo />
       <Testimonials />
+      <Blog/>
     </>
     
     

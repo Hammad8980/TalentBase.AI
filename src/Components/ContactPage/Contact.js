@@ -2,6 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
+    /*
     <div className="Contact PrimaryFont">
       <div className="SidePadding BlogDiv1">
         <p className='BlogDiv1P1'>Contact Us<span className='' style={{ color: '#ff7f50' }}>.</span></p>
@@ -65,8 +66,9 @@ const Contact = () => {
           <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
         </form>
       </div>
-    </div>
+    </div>*/
+    <></>
   )
 }
 
-export default Contact*/
+export default Contact

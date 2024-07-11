@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Testimonials.module.css';
 import { Carousel } from 'react-bootstrap';
 
@@ -13,6 +13,8 @@ const TestimonialCard = ({ content, author }) => (
 );
 
 const Testimonials = () => {
+  const [itemsPerSlide, setItemsPerSlide] = useState(2);
+
   const testimonials = [
     {
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -32,6 +34,19 @@ const Testimonials = () => {
     }
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerSlide(window.innerWidth <= 620 ? 1 : 2);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className={styles.testimonials}>
       <h2 className={styles.sectionTitle}>TESTIMONIALS</h2>
@@ -40,21 +55,20 @@ const Testimonials = () => {
       </p>
       <Carousel>
         {testimonials.reduce((acc, testimonial, index, array) => {
-          if (index % 2 === 0) {
-            acc.push(array.slice(index, index + 2));
+          if (index % itemsPerSlide === 0) {
+            acc.push(array.slice(index, index + itemsPerSlide));
           }
           return acc;
         }, []).map((pair, index) => (
           <Carousel.Item key={index}>
             <div className={styles.testimonialContainer}>
-              {pair.map((testimonial, index) => (
-                <TestimonialCard key={index} {...testimonial} />
+              {pair.map((testimonial, i) => (
+                <TestimonialCard key={i} {...testimonial} />
               ))}
             </div>
           </Carousel.Item>
         ))}
       </Carousel>
-      
     </section>
   );
 };

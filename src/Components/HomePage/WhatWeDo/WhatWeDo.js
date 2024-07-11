@@ -3,7 +3,7 @@ import TalentBase from './TalentBase'
 
 const WhatWeDo = () => {
   return (
-    <div className="WhatWeDo SidePadding PrimaryColor2 PrimaryFont">
+    <div className="WhatWeDo SidePadding PrimaryColor2 PrimaryFont CompMargin">
       <div className="WhatWeDoDiv1">
         <p className='SidePadding WhatWeDoDiv1P1'>What we do</p>
         <p className='WhatWeDoDiv1P2'>loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf</p>
