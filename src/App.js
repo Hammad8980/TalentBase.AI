@@ -5,7 +5,7 @@ import Students from './Components/Students';
 import About from './Components/About';
 import Blog from './Components/BlogPage/Blog';
 import TNSFS from './Components/TNSFS';
-import Contact from './Components/Contact';
+import Contact from './Components/ContactPage/Contact';
 import Missing from './Components/Missing';
 import { Route, Routes, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
