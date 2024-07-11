@@ -1,0 +1,171 @@
+.footer {
+    background-color: #008080;
+    display: flex;
+
+    width: 100%;
+    flex-direction: column;
+    padding: 80px 0 14px;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    max-width: auto;
+    gap: 60px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    color: #ff7f50;
+    letter-spacing: 0.72px;
+
+    font: 700 20px/20px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .logoText {
+    color: #fff;
+  }
+  
+  .logoDot {
+    color: #ff7f50;
+  }
+  
+  .slogan {
+    color: #fafafa;
+    margin-top: 24px;
+    font: 500 16px/140% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    margin-top: 4px;
+    gap: 20px;
+  }
+  
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .emailInput {
+    border-radius: 4px;
+    border: 2px solid #fafafa;
+    background: transparent;
+    color: #fafafa;
+    font-size: 13px;
+    line-height: 150%;
+    padding: 12px 26px;
+    flex-grow: 1;
+  }
+  .emailInput::placeholder {
+    color: white; 
+    opacity: 50%;
+  }
+  
+  
+  .submitButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transform: translateX(-120%);
+    right: 10px; /* Adjust this value to position the button inside the input */
+     top: 50%;
+  }
+  
+  .submitIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .columnTitle {
+    color: #fafafa;
+    font: 500 14px/140% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+
+  }
+  
+  .contactInfo,
+  .footerLink {
+    color: #fafafa;
+    font: 400 12px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-top: 16px;
+    text-decoration: none;
+  }
+  
+  .footerLink:hover {
+    text-decoration: underline;
+  }
+  
+  .appStoreLinks {
+    display: flex;
+    gap: 8px;
+    margin-top: 17px;
+  }
+  
+  .appStoreIcon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .appStoreButtons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .appStoreButton {
+    width: 110px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .socialLink img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: #fff;
+    font: 400 12px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .copyrightIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      max-width: 100%;
+    }
+  
+    .footerContent {
+      flex-wrap: wrap;
+    }
+  
+    .copyright {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
