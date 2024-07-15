@@ -1,45 +1,31 @@
 import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faEnvelope, faPhone, faMessage } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 
-const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const REGISTER_URL = '/register';
+const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]*@[a-zA-Z0-9]*.com$/;
 
 const Contact = () => {
   const userRef = useRef();
   const errRef = useRef();
 
-  const [user, setUser] = useState('');
-  const [validName, setValidName] = useState(false);
-  const [userFocus, setUserFocus] = useState(false);
+  const [name, setName] = useState('');
 
-  const [pwd, setPwd] = useState('');
-  const [validPwd, setValidPwd] = useState(false);
-  const [pwdFocus, setPwdFocus] = useState(false);
+  const [email, setEmail] = useState('');
+  const [validEmail, setValidEmail] = useState(false);
+  const [emailFocus, setEmailFocus] = useState(false);
 
-  const [matchPwd, setMatchPwd] = useState('');
-  const [validMatch, setValidMatch] = useState(false);
-  const [matchFocus, setMatchFocus] = useState(false);
+  const [phone, setPhone] = useState('');
 
-  const [errMsg, setErrMsg] = useState('');
-  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     userRef.current.focus();
   }, []);
 
   useEffect(() => {
-    setValidName(USER_REGEX.test(user));
-  }, [user]);
-
-  useEffect(() => {
-    setValidPwd(PWD_REGEX.test(pwd));
-    setValidMatch(pwd === matchPwd);
-  }, [pwd, matchPwd]);
-
-  useEffect(() => {
-    setErrMsg('');
-  }, [user, pwd, matchPwd]);
+    setValidEmail(EMAIL_REGEX.test(email));
+  }, [email]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,76 +33,90 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact PrimaryFont">
-      <div className="SidePadding ContactDiv1">
+    <div className="Contact PrimaryFont SidePadding">
+      <div className="ContactDiv1">
         <p className="BlogDiv1P1">Contact Us<span style={{ color: '#ff7f50' }}>.</span></p>
       </div>
       <div className="ContactDiv2">
         <div className="ContactDiv2Div1">
           <img className='ContactDiv2Div1img' src="./Contact.png" alt="A lady" />
         </div>
-        <div>
+        <div className="ContactDiv2Div2">
           <form onSubmit={handleSubmit}>
-            <label htmlFor="username">
-              Username:
-            </label>
-            <input
-              type="text"
-              id="username"
-              ref={userRef}
-              onChange={(e) => setUser(e.target.value)}
-              value={user}
-              required
-              aria-invalid={validName ? "false" : "true"}
-              aria-describedby="uidnote"
-              onFocus={() => setUserFocus(true)}
-              onBlur={() => setUserFocus(false)}
-            />
-            <p id="uidnote" className={userFocus && user && !validName ? "instructions" : "offscreen"}>
-              4 to 24 characters.<br />
-              Must begin with a letter.<br />
-              Letters, numbers, underscores, hyphens allowed.
-            </p>
+            <div className="FormDivs">
+              <FontAwesomeIcon icon={faUser} />
+              <label htmlFor="username" className="OffScreen">
+                Username:
+              </label>
+              <input
+                type="text"
+                id="username"
+                className="FormBorder"
+                placeholder="Name"
+                ref={userRef}
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                required
+              />
+            </div>
 
-            <label htmlFor="password">
-              Password:
-            </label>
-            <input
-              type="password"
-              id="password"
-              onChange={(e) => setPwd(e.target.value)}
-              value={pwd}
-              required
-              aria-invalid={validPwd ? "false" : "true"}
-              aria-describedby="pwdnote"
-              onFocus={() => setPwdFocus(true)}
-              onBlur={() => setPwdFocus(false)}
-            />
-            <p id="pwdnote" className={pwdFocus && !validPwd ? "instructions" : "offscreen"}>
-              8 to 24 characters.<br />
-              Must include uppercase and lowercase letters, a number, and a special character.<br />
-              Allowed special characters: ! @ # $ %
-            </p>
+            <div className="FormDivs" style={{displ}}>
+              <FontAwesomeIcon icon={faEnvelope} />
+              <label htmlFor="email" className="OffScreen">
+                Email:
+              </label>
+              <input
+                type="text"
+                id="email"
+                className="FormBorder"
+                placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                required
+                aria-describedby="emailcheck"
+                aria-invalid={validEmail ? "false" : "true"}
+                onFocus={() => setEmailFocus(true)}
+                onBlur={() => setEmailFocus(false)}
+              />
+              <p id="emailcheck" className={emailFocus && !validEmail ? "Instructions" : "OffScreen"}>
+                Email does not seems to be correct
+              </p>
+            </div>
 
-            <label htmlFor="confirm_pwd">
-              Confirm Password:
-            </label>
-            <input
-              type="password"
-              id="confirm_pwd"
-              onChange={(e) => setMatchPwd(e.target.value)}
-              value={matchPwd}
-              required
-              aria-invalid={validMatch ? "false" : "true"}
-              aria-describedby="confirmnote"
-              onFocus={() => setMatchFocus(true)}
-              onBlur={() => setMatchFocus(false)}
-            />
-            <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
-              Must match the first password input field.
-            </p>
+            <div className="FormDivs">
+              <FontAwesomeIcon icon={faPhone} />
+              <label htmlFor="phone" className="OffScreen">
+                Phone:
+              </label>
+              <input
+                type="text"
+                id="phone"
+                className="FormBorder"
+                placeholder="Phone"
+                onChange={(e) => setPhone(e.target.value)}
+                value={phone}
+                required
+              />
+            </div>
 
-            <button disabled={!validName || !validPwd || !validMatch}>Sign Up</button>
+            <div className="FormDivs">
+              <FontAwesomeIcon icon={faMessage} />
+              <label htmlFor="message" className="OffScreen">
+                Message:
+              </label>
+              <input
+                type="text"
+                id="message"
+                className="FormBorder"
+                placeholder="Message"
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+                required
+              />
+            </div>
+            <div className="FormDivs">
+              <button className="SecondaryColor FormButton" disabled={!validEmail}>Submit</button>
+            </div>
           </form>
         </div>
       </div>
