@@ -39,6 +39,7 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     overflow: hidden;
+    border : none;
   }
   .BlogComp:hover {
     box-shadow: 3px 7px 10px #009691;

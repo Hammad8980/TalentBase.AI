@@ -17,23 +17,12 @@
   border-radius: 15px;
 }
 
-@font-face {
-  font-family: "Ubuntu";
-  src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-}
-
-.PrimaryFont {
-  font-family: "Ubuntu";
-}
-
-
 .App {
-  font-family: 'Poppins';
+  font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 .App-header {
   background-color: #009691;
-  /* Match the background color */
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -46,7 +35,6 @@
   font-weight: 600;
   margin-right: auto;
 }
-
 
 .App-nav ul {
   list-style: none;
@@ -66,16 +54,15 @@
   align-items: flex-start;
   justify-content: center;
   background-color: #009691;
-  height: 500px;
+  height: 100vh;
   text-align: center;
   padding-left: 3%;
   gap: 30px;
 }
 
-
 .App-main h1 {
   text-shadow: 1px 1px #000000;
-  font-size: 2.3em;
+  font-size: 3em;
   font-style: italic;
   color: white;
   gap: 20px;
@@ -125,7 +112,6 @@ a:hover {
   padding-bottom: 5%;
 }
 
-
 .SidePadding {
   padding-left: 3%;
 }
@@ -164,14 +150,91 @@ a:hover {
   gap: 5%;
 }
 
-/*Blog Page*/
+/* Blog Page */
 
-
-
-/*Contact*/
+/* Contact */
 
 .Contact {
   width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .App-main {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .App-main h1 {
+    font-size: 2em;
+  }
+
+  .App-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .TalentBaseComp {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .WhatWeDoDiv1,
+  .WhatWeDoDiv2 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .WhatWeDoDiv1P1 {
+    font-size: 2em;
+  }
+
+  .WhatWeDoDiv1P2 {
+    font-size: 1em;
+  }
+
+  .App-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .App-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .TalentBaseComp {
+    width: 100%;
+  }
+
+  .WhatWeDoDiv1,
+  .WhatWeDoDiv2 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .WhatWeDoDiv1P1 {
+    font-size: 2.5em;
+  }
+
+  .WhatWeDoDiv1P2 {
+    font-size: 1.25em;
+  }
+
+  .App-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
