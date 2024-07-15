@@ -60,7 +60,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="FormDivs" style={{displ}}>
+            <div className="FormDivs">
               <FontAwesomeIcon icon={faEnvelope} />
               <label htmlFor="email" className="OffScreen">
                 Email:
