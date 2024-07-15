@@ -8,7 +8,7 @@ const Footer = () => {
         <div className={styles.footerColumn}>
           <div className={styles.logo}>
             <span className={styles.logoText}>TALENTBASE</span>
-            <span className={styles.logoDot}>.</span>
+            <span className={styles.logoDot}>.AI</span>
           </div>
           <p className={styles.slogan}>lorem ipsum</p>
           <form className={styles.subscribeForm}>
