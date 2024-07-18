@@ -6,10 +6,9 @@ import About from './Components/About';
 import Blog from './Components/BlogPage/Blog';
 import TNSFS from './Components/TNSFS';
 import Contact from './Components/ContactPage/Contact';
-import Missing from './Components/MissingPage/Missing';
+import Missing from './Components/Missing';
 import { Route, Routes, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import SignUp from './SignUp/Signup';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/tnsfs" element={<TNSFS />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/Signup" element={<SignUp />} />
         <Route path="*" element={<Missing />} />
       </Routes>
     </div>
