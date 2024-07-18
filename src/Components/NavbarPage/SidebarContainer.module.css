@@ -1,0 +1,92 @@
+.sidebarContainer {
+    border-radius: 20px;
+    box-shadow: 0 1.591px 1.591px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    display: flex;
+    margin-top: -6px;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding: 28px 0 53px;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebarContainer {
+      margin-top: 40px;
+    }
+  }
+  
+  .userInfoContainer {
+    display: flex;
+    margin-left: 34px;
+    width: 155px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 991px) {
+    .userInfoContainer {
+      margin-left: 10px;
+    }
+  }
+  
+  .userInfo {
+    align-self: start;
+    display: flex;
+    margin-left: 10px;
+    gap: 18px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+  }
+  
+  .userAvatar {
+    aspect-ratio: 1.02;
+    object-fit: auto;
+    object-position: center;
+    width: 55px;
+  }
+  
+  .userName {
+    font-family: Ubuntu, sans-serif;
+    margin: auto 0;
+  }
+  
+  .divider {
+    border-color: rgba(149, 149, 149, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #959595;
+    align-self: stretch;
+    margin-top: 15px;
+    height: 1px;
+  }
+  
+  .menuContainer {
+    display: flex;
+    width: 170px;
+    max-width: 100%;
+    flex-direction: column;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    margin: 16px 0 0 30px;
+  }
+  
+  @media (max-width: 991px) {
+    .menuContainer {
+      margin-left: 10px;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }

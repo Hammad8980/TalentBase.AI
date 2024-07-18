@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <main className="App-main">
-      <h1 className='animate__animated animate__fadeInDown'>Let us Build Brands<br></br> together shall we?</h1>
-      <div className="App-buttons animate__animated animate__fadeInDown">
+      <h1>Let us Build Brands<br></br> together shall we?</h1>
+      <div className="App-buttons">
         <button className="start-button">GET STARTED</button>
         <span>or</span>
         <a href="/video">Watch video</a>

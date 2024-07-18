@@ -22,36 +22,6 @@
   font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
-.App-header {
-  background-color: #009691;
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: ms-auto;
-  color: white;
-}
-.App-header em {
-  color: #ff7f50;
-}
-
-.navbar-brand {
-  font-style: oblique;
-  font-weight: 600;
-  margin-right: auto;
-}
-
-.App-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 20px;
-}
-
-.App-nav li {
-  cursor: pointer;
-}
-
 .App-main {
   display: flex;
   flex-direction: column;
