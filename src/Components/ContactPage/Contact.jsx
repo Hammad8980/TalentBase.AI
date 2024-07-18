@@ -83,7 +83,7 @@ const Contact = () => {
 
             <div className="FormDiv">
               <p id="emailcheck" className={emailFocus && !validEmail && email ? "Instructions" : "OffScreen"}>
-                Email does not seems to be correct
+                Invalid Email Format!
               </p>
             </div>
 

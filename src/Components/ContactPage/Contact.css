@@ -5,6 +5,7 @@
 
 .Instructions {
   margin: 7%;
+  padding: 2%;
   border-radius: 0.5rem;
   background: #ff7f50;
   color: #ffff;
@@ -58,6 +59,8 @@
   color: white;
   border-radius: 5px;
   align-items: right;
+  border-style: none;
+  box-shadow: 4px 4px 4px #ff7f50;
 }
 
 .FormDivs {
@@ -66,4 +69,3 @@
   align-items: center;
   gap: 1%;
 }
-
