@@ -1,5 +1,7 @@
 import React from 'react'
 import TalentBase from './TalentBase'
+import styles from './WhatWeDo.css'
+
 
 const WhatWeDo = () => {
   return (

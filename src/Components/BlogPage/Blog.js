@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogComp from './BlogComp'
 import styles from './Blog.css'
+import 'animate.css'
 
 const Blog = () => {
 
@@ -20,7 +21,7 @@ const Blog = () => {
 
   ];
   return (
-    <div className="Blog SidePadding PrimaryColor2 PrimaryFont CompMargin">
+    <div className="Blog SidePadding PrimaryColor2 PrimaryFont CompMargin animate__fadeInUp">
       <div className="BlogDiv1">
         <p className='BlogDiv1P1'>Our Blog</p>
         <p className='BlogDiv1P2'>loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf</p>

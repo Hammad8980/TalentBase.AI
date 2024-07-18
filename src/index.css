@@ -30,6 +30,9 @@
   align-items: ms-auto;
   color: white;
 }
+.App-header em {
+  color: #ff7f50;
+}
 
 .navbar-brand {
   font-style: oblique;
@@ -83,6 +86,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  --animate-delay: 0.9s;
 }
 
 .start-button {
@@ -108,11 +112,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.WhatWeDo {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 .SidePadding {
   padding-left: 3%;
 }
@@ -127,31 +126,6 @@ a:hover {
   word-wrap: break-word;
   overflow: hidden;
 }
-
-.WhatWeDoDiv1 {
-  width: 50%;
-  margin-bottom: 15%;
-  overflow: hidden;
-}
-
-.WhatWeDoDiv1P1 {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.WhatWeDoDiv1P2 {
-  font-size: 1.5rem;
-}
-
-.WhatWeDoDiv2 {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5%;
-}
-
-/* Blog Page */
 
 /* Contact */
 
