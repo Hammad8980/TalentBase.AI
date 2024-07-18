@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faPhone, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope, faPhone, faMessage, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]*@[a-zA-Z0-9]*.com$/;
@@ -29,6 +29,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("i got submit");
     // Add your submit logic here
   };
 
@@ -78,7 +79,10 @@ const Contact = () => {
                 onFocus={() => setEmailFocus(true)}
                 onBlur={() => setEmailFocus(false)}
               />
-              <p id="emailcheck" className={emailFocus && !validEmail ? "Instructions" : "OffScreen"}>
+            </div>
+
+            <div className="FormDiv">
+              <p id="emailcheck" className={emailFocus && !validEmail && email ? "Instructions" : "OffScreen"}>
                 Email does not seems to be correct
               </p>
             </div>
@@ -114,8 +118,8 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="FormDivs">
-              <button className="SecondaryColor FormButton" disabled={!validEmail}>Submit</button>
+            <div className="FormDivs" style={{justifyContent: "right"}}>
+              <button className="SecondaryColor FormButton" disabled={!validEmail && name && phone && message}>Submit <FontAwesomeIcon icon={faLocationArrow} /></button>
             </div>
           </form>
         </div>

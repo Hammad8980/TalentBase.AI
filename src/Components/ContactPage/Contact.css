@@ -4,13 +4,10 @@
 }
 
 .Instructions {
-  font-size: 0.75rem;
+  margin: 7%;
   border-radius: 0.5rem;
-  background: #000;
-  color: #fff;
-  padding: 0.25rem;
-  position: relative;
-  bottom: -10px;
+  background: #ff7f50;
+  color: #ffff;
 }
 
 .Contact {
@@ -52,18 +49,24 @@
   width: 100%;
   border-style: none;
   border-radius: 20px;
+  margin-left: 3%;
   background-color: rgba(240, 248, 255, 0.795);
+}
+
+.FormBorder::placeholder {
+  padding-left: 3%;
 }
 
 .FormButton {
   color: white;
-  border-radius: 20px;
-  justify-content: right;
-  right: 0;
+  border-radius: 5px;
+  align-items: right;
 }
 
 .FormDivs {
   margin: 7%;
   display: flex;
+  align-items: center;
   gap: 1%;
 }
+
