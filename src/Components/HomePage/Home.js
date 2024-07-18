@@ -4,7 +4,7 @@ import Testimonials from './Testimonials/Testimonials';
 import Blog from '../BlogPage/Blog';
 import Newsletter from './NewsLetter/NewsLetter';
 import Footer from './Footer/Footer';
-import 'animate.css'
+
 
 const Home = () => {
   return (

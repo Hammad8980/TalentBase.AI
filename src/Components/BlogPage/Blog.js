@@ -1,7 +1,6 @@
 import React from 'react'
 import BlogComp from './BlogComp'
 import styles from './Blog.css'
-import 'animate.css'
 
 const Blog = () => {
 
