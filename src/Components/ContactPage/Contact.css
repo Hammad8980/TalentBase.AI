@@ -12,12 +12,12 @@
 }
 
 .Contact {
-  padding-top: 5%;
+  padding-top: 1%;
   padding-bottom: 5%;
 }
 
 .ContactDiv1 {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   overflow: hidden;
 }
 
@@ -26,6 +26,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10%;
 
 }
 
