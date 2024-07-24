@@ -45,6 +45,12 @@ const NavBar = ({ icon, text }) => {
             <Link className="nav-link" to="/contact">
               Contact
             </Link>
+            <Link className="nav-link" to="/studentDashboard">
+              Student Dash
+            </Link>
+            <Link className="nav-link" to="/academiaDashboard">
+              Academic
+            </Link>
             <div class="dropdown">
               <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                 <img className="menuIcon" src="https://cdn.builder.io/api/v1/image/assets/TEMP/49b687c8529cd8566cb72fd16bc1563eb06fd07058bdc4f9fe453d2b6dc6a1e8?apiKey=168c23e5e966425abe0e4b54edde3b42&"></img>

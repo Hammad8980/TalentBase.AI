@@ -38,7 +38,7 @@ const SignUp = () => {
             type="text"
             id="name"
             placeholder="Name"
-            className= "SignUpInput"
+            className="SignUpInput"
             ref={userRef}
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -51,7 +51,7 @@ const SignUp = () => {
             type="password"
             id="password"
             placeholder="Password"
-            className= "SignUpInput"
+            className="SignUpInput"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -64,7 +64,7 @@ const SignUp = () => {
               type="password"
               id="confirmPassword"
               placeholder="Confirm Password"
-              className= "SignUpInput"
+              className="SignUpInput"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
@@ -78,7 +78,7 @@ const SignUp = () => {
             type="text"
             id="institution"
             placeholder="Academic Institution"
-            className= "SignUpInput"
+            className="SignUpInput"
             value={institution}
             onChange={(e) => setInstitution(e.target.value)}
             required
@@ -90,7 +90,7 @@ const SignUp = () => {
             type="text"
             id="degree"
             placeholder="Last Academic Degree"
-            className= "SignUpInput"
+            className="SignUpInput"
             value={degree}
             onChange={(e) => setDegree(e.target.value)}
             required
@@ -98,6 +98,9 @@ const SignUp = () => {
         </div>
         <button className="SignUpButton" type="submit">SIGN UP</button>
       </form>
+      <div>
+        <span>Already Register? <a className="LogInLink" href="/login">Log In</a></span>
+      </div>
     </div>
   );
 };

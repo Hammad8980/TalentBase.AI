@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact PrimaryFont SidePadding">
+    <div className="Contact SidePadding">
       <div className="ContactDiv1">
         <p className="BlogDiv1P1">Contact Us<span style={{ color: '#ff7f50' }}>.</span></p>
       </div>

@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-input {
+.SignUpInput {
     width: 100%;
     padding: 10px;
     border: 1px solid #d3d3d3;
@@ -90,4 +90,8 @@ input {
 
 .cross-icon.visible {
     display: block;
+}
+
+.LogInLink {
+    color: #ff7f50;
 }
