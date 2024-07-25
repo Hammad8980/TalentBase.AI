@@ -6,6 +6,7 @@ import About from './Components/About';
 import Blog from './Components/BlogPage/Blog';
 import TNSFS from './Components/TNSFS';
 import Contact from './Components/ContactPage/Contact';
+import LearningPathDetails from './Components/HomePage/WhatWeDo/LearningPathDetails';
 import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
 import StudentDashBoard from './Components/StudentPages/StudentDashBoard';
@@ -27,6 +28,7 @@ function App() {
     <main className='App'>
       <Navbar />
       <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/students" element={<Students />} />
@@ -34,6 +36,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/tnsfs" element={<TNSFS />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/learningPathDetails" element={<LearningPathDetails />} />
           <Route element={<RequireAuth allowedRoles={[Roles.Student]} />}>
             <Route path="/studentDashboard" element={<StudentDashBoard />} />
           </Route>
@@ -46,6 +49,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="*" element={<Missing />} />
+        </Route>
       </Routes>
     </main>
 
