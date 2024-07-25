@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import styles from './SidebarContainer.module.css';
-
+import { Popover, OverlayTrigger } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const NavBar = ({ icon, text }) => {
+  const [show, setShow] = useState(false);
+  const handleToggle = () => setShow(!show);
+
+  const popover = (
+    <Popover id="avatar-popover">
+      <Popover.Body>
+        <div className="popover-content">
+          <div className="popover-header">
+            <div className="avatar"></div>
+            <span className="username">JOHN DOE</span>
+          </div>
+          <div className="popover-body">
+            <div className="popover-item">Dashboard</div>
+            <div className="popover-item">Learning Path</div>
+            <div className="popover-item">Privacy Policy</div>
+            <div className="popover-item">About</div>
+            <div className="popover-item">Settings</div>
+            <div className="popover-item">Logout</div>
+          </div>
+        </div>
+      </Popover.Body>
+    </Popover>
+  );
   return (
     <nav className="App-header navbar fixed-top navbar-expand-lg">
       <div className="container-fluid">
@@ -45,15 +68,14 @@ const NavBar = ({ icon, text }) => {
             <Link className="nav-link" to="/contact">
               Contact
             </Link>
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                <img className="menuIcon" src="https://cdn.builder.io/api/v1/image/assets/TEMP/49b687c8529cd8566cb72fd16bc1563eb06fd07058bdc4f9fe453d2b6dc6a1e8?apiKey=168c23e5e966425abe0e4b54edde3b42&"></img>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
-              </ul>
+            <div className="avatar-popover-container">
+              <OverlayTrigger
+                trigger="click"
+                placement="bottom"
+                overlay={popover}
+              >
+                <div className="avatar-icon" onClick={handleToggle}></div>
+              </OverlayTrigger>
             </div>
           </div>
         </div>

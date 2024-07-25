@@ -48,6 +48,74 @@
     flex-basis: auto;
     margin: auto 0;
   }
+  /* AvatarPopover.css */
+
+.avatar-popover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background-color: #008080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.avatar-icon:before {
+  content: '\1F464'; /* Unicode for user icon */
+  font-size: 22px;
+  color: white !important;
+}
+
+.popover-content {
+  width: 200px;
+}
+
+.popover-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+}
+
+.popover-body {
+  padding: 10px;
+}
+
+.popover-item {
+  padding: 10px 0;
+  color: #008080;
+  cursor: pointer;
+}
+
+.popover-item:hover {
+  background-color: #f0f0f0;
+}
+
   
   @media (max-width: 991px) {
     .menuItem {
