@@ -30,7 +30,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("i got submit");
-    // Add your submit logic here
   };
 
   return (
