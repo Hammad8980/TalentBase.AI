@@ -29,7 +29,7 @@ const NavBar = ({ icon, text }) => {
     </Popover>
   );
   return (
-    <nav className="App-header navbar fixed-top navbar-expand-lg">
+    <nav className="App-header navbar sticky-top navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           TALENTBASE.
