@@ -1,5 +1,5 @@
 import React from 'react';
-import './Enterprise.css';
+import './Startups.css';
 
 const FeaturedStartups = () => {
   return (

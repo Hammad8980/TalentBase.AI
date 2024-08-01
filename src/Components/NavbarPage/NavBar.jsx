@@ -193,8 +193,8 @@ const NavBar = ({ icon, text }) => {
             >
               Home
             </Link>
-            <Link className="nav-link" to="/enterprise" onClick={closePopover}>
-              Enterprise
+            <Link className="nav-link" to="/startups" onClick={closePopover}>
+              Startups
             </Link>
             <Link className="nav-link" to="/students" onClick={closePopover}>
               Students

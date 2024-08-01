@@ -1,6 +1,6 @@
 import Navbar from './Components/NavbarPage/NavBar';
 import Home from './Components/HomePage/Home';
-import Enterprise from './Components/EnterprisePage/Enterprise';
+import Startups from './Components/StartupsPage/Startups';
 import Students from './Components/Students';
 import About from './Components/About';
 import Blog from './Components/BlogPage/Blog';
@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/enterprise" element={<Enterprise />} />
+          <Route path="/startups" element={<Startups />} />
           <Route path="/students" element={<Students />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
