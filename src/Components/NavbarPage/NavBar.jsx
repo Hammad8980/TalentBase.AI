@@ -5,7 +5,7 @@ import { Popover, OverlayTrigger } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUser,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = ({ icon, text }) => {

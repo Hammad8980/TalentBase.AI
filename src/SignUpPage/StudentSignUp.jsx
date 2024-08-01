@@ -1,22 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./SignUp.css";
+import axios from '../API/axios';
+const SignUp_URL = '/signup'
 
-const SignUp = () => {
+const StudentSignUp = () => {
   const userRef = useRef();
 
-  const [name, setName] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [UserName, setUserName] = useState('');
+  const [Password, setPassword] = useState('');
+  const [ConfirmPassword, setConfirmPassword] = useState('');
   const [matchPassword, setMatchPassword] = useState(false);
-  const [institution, setInstitution] = useState('');
-  const [degree, setDegree] = useState('');
+  const [AcademicInstitution, setAcademicInstitution] = useState('');
+  const [LastAcademicDegree, setLastAcademicDegree] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(matchPassword)
-    console.log(name)
-    console.log(degree)
-    console.log(!institution)
+    try {
+      const response = await axios.post(SignUp_URL,
+        JSON.stringify({ UserName, Password, AcademicInstitution, LastAcademicDegree }),
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        }
+      );
+      console.log(JSON.stringify(response))
+    }
+    catch (err) {
+      console.log(err);
+    }
+
   };
 
   useEffect(() => {
@@ -24,13 +37,11 @@ const SignUp = () => {
   }, []);
 
   useEffect(() => {
-    setMatchPassword(password === confirmPassword);
-  }, [confirmPassword, password]);
+    setMatchPassword(Password === ConfirmPassword);
+  }, [ConfirmPassword, Password]);
 
   return (
     <div className="signup-container">
-      <div className="profile-pic"><img className='ProfileImg' src='Bunny.jpg' alt='A bunnyyy' /></div>
-      <h2 className="SignUpHeading">Sign into your account</h2>
       <form onSubmit={handleSubmit} className="SignUpForm">
         <div className="FormSubDiv">
           <label htmlFor="name" className="OffScreen">Name</label>
@@ -40,8 +51,8 @@ const SignUp = () => {
             placeholder="Name"
             className="SignUpInput"
             ref={userRef}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={UserName}
+            onChange={(e) => setUserName(e.target.value)}
             required
           />
         </div>
@@ -52,7 +63,7 @@ const SignUp = () => {
             id="password"
             placeholder="Password"
             className="SignUpInput"
-            value={password}
+            value={Password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
@@ -65,11 +76,11 @@ const SignUp = () => {
               id="confirmPassword"
               placeholder="Confirm Password"
               className="SignUpInput"
-              value={confirmPassword}
+              value={ConfirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
-            <span className={`cross-icon ${!matchPassword && confirmPassword ? 'visible' : ''}`}>&#x2716;</span>
+            <span className={`cross-icon ${!matchPassword && ConfirmPassword ? 'visible' : ''}`}>&#x2716;</span>
           </div>
         </div>
         <div className="FormSubDiv">
@@ -79,8 +90,8 @@ const SignUp = () => {
             id="institution"
             placeholder="Academic Institution"
             className="SignUpInput"
-            value={institution}
-            onChange={(e) => setInstitution(e.target.value)}
+            value={AcademicInstitution}
+            onChange={(e) => setAcademicInstitution(e.target.value)}
             required
           />
         </div>
@@ -91,8 +102,8 @@ const SignUp = () => {
             id="degree"
             placeholder="Last Academic Degree"
             className="SignUpInput"
-            value={degree}
-            onChange={(e) => setDegree(e.target.value)}
+            value={LastAcademicDegree}
+            onChange={(e) => setLastAcademicDegree(e.target.value)}
             required
           />
         </div>
@@ -105,4 +116,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default StudentSignUp;

@@ -3,13 +3,19 @@
     left: -9999px;
 }
 
+.SelectRoleSignUpMain {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d3d3d3;
+}
+
 .signup-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #d3d3d3;
     text-align: center;
     padding: 20px;
 }

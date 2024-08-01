@@ -1,11 +1,14 @@
-import "./StudentDashBoard.css"
+import Sidebar from './Sidebar';
+import Dashboard from './DashBoard.jsx';
+import "./studentDashBoard.css";
 
-const StudentDashBoard = () => {
+function StudentDashboard() {
   return (
-    <div className="StudentDashboard">
-      <p>This is student DashBoard</p>
+    <div className="stu-dash-container" >
+      <Sidebar />
+      <Dashboard />
     </div>
-  )
+  );
 }
 
-export default StudentDashBoard
+export default StudentDashboard;
