@@ -4,13 +4,7 @@ import "./NavBar.css";
 import { Popover, OverlayTrigger } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faEnvelope,
-  faPhone,
-  faMessage,
-  faLocationArrow,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = ({ icon, text }) => {
   const [show, setShow] = useState(false);

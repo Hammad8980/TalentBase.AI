@@ -10,6 +10,10 @@
   background-color: #ff7f50;
 }
 
+.SidePadding {
+  padding-left: 3%;
+}
+
 .CompMargin {
   margin-top: 3%;
   margin-left: 3%;
@@ -79,10 +83,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.SidePadding {
-  padding-left: 3%;
 }
 
 .TalentBaseComp {

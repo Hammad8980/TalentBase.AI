@@ -7,7 +7,6 @@ const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]*@[a-zA-Z0-9]*.com$/;
 
 const Contact = () => {
   const userRef = useRef();
-  const errRef = useRef();
 
   const [name, setName] = useState('');
 
