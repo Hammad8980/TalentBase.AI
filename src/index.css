@@ -1,0 +1,184 @@
+.PrimaryColor1 {
+  background-color: #008080;
+}
+
+.PrimaryColor2 {
+  background-color: #d3d3d3;
+}
+
+.SecondaryColor {
+  background-color: #ff7f50;
+}
+
+.SidePadding {
+  padding-left: 3%;
+}
+
+.CompMargin {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 15px;
+}
+
+.App {
+  font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #009691;
+  height: 100vh;
+  text-align: center;
+  padding-left: 3%;
+  gap: 30px;
+}
+
+.App-main h1 {
+  text-shadow: 1px 1px #000000;
+  font-size: 3em;
+  font-style: italic;
+  color: white;
+  gap: 20px;
+}
+
+.App-main a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.App-main span {
+  color: white;
+}
+
+.App-buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  --animate-delay: 0.9s;
+}
+
+.start-button {
+  background-color: #eb7734;
+  /* Match the button color */
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.start-button:hover {
+  background-color: #F4511E;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.TalentBaseComp {
+  width: 250px;
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* Contact */
+
+.Contact {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .App-main {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .App-main h1 {
+    font-size: 2em;
+  }
+
+  .App-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .TalentBaseComp {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .WhatWeDoDiv1,
+  .WhatWeDoDiv2 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .WhatWeDoDiv1P1 {
+    font-size: 2em;
+  }
+
+  .WhatWeDoDiv1P2 {
+    font-size: 1em;
+  }
+
+  .App-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .App-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .TalentBaseComp {
+    width: 100%;
+  }
+
+  .WhatWeDoDiv1,
+  .WhatWeDoDiv2 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .WhatWeDoDiv1P1 {
+    font-size: 2.5em;
+  }
+
+  .WhatWeDoDiv1P2 {
+    font-size: 1.25em;
+  }
+
+  .App-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

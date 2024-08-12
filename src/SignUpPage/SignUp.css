@@ -1,0 +1,103 @@
+.OffScreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.SelectRoleSignUpMain {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d3d3d3;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.ProfileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SignUpHeading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.FormSubDiv {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-instruction {
+    width: 100%;
+}
+
+.SignUpInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.SignUpButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.input-container {
+    width: 100%;
+    position: relative;
+}
+
+.cross-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 2rem;
+    display: none;
+}
+
+.cross-icon.visible {
+    display: block;
+}
+
+.LogInLink {
+    color: #ff7f50;
+}

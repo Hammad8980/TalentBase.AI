@@ -1,0 +1,60 @@
+
+.WhatWeDo {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.WhatWeDoDiv1 {
+    width: 50%;
+    margin-bottom: 15%;
+    overflow: hidden;
+  }
+  
+  .WhatWeDoDiv1P1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .WhatWeDoDiv1P2 {
+    font-size: 1.5rem;
+  }
+  
+  .WhatWeDoDiv2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+
+  @media (max-width: 600px) {
+    .WhatWeDoDiv1,
+    .WhatWeDoDiv2 {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  
+    .WhatWeDoDiv1P1 {
+      font-size: 2em;
+    }
+  
+    .WhatWeDoDiv1P2 {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .WhatWeDoDiv1,
+    .WhatWeDoDiv2 {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  
+    .WhatWeDoDiv1P1 {
+      font-size: 2.5em;
+    }
+  
+    .WhatWeDoDiv1P2 {
+      font-size: 1.25em;
+    }
+  }
