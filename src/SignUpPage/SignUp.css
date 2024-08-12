@@ -1,17 +1,3 @@
-.OffScreen {
-    position: absolute;
-    left: -9999px;
-}
-
-.SelectRoleSignUpMain {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #d3d3d3;
-}
-
 .signup-container {
     display: flex;
     flex-direction: column;
@@ -20,25 +6,18 @@
     padding: 20px;
 }
 
-.profile-pic {
+.Avatar {
     width: 100px;
     height: 100px;
-    background-color: #d3d3d3;
+    background: #e0e0e0;
     border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.SignUpHeader {
     margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.ProfileImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.SignUpHeading {
     font-size: 24px;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .SignUpForm {
@@ -54,16 +33,27 @@
     margin-bottom: 15px;
 }
 
-.form-instruction {
-    width: 100%;
-}
-
 .SignUpInput {
     width: 100%;
     padding: 10px;
     border: 1px solid #d3d3d3;
     border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    background: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.SignUpInput option {
+    background-color: #d3d3d3;
+    color: #333;
+    padding: 10px;
+}
+
+.SignUpInput:focus {
+    border-color: #ff7f50;
+    outline: none;
 }
 
 .SignUpButton {

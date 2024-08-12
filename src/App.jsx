@@ -7,8 +7,7 @@ import Blog from './Components/BlogPage/Blog';
 import TNSFS from './Components/TNSFS';
 import Contact from './Components/ContactPage/Contact';
 import LearningPathDetails from './Components/HomePage/WhatWeDo/LearningPathDetails';
-import SignUp from './SignUpPage/SignUpSelectRole';
-import SignUpStudent from './SignUpPage/StudentSignUp';
+import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
 
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
