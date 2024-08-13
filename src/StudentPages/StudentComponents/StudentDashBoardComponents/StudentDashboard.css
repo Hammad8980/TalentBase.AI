@@ -1,0 +1,102 @@
+
+.stu-dash-sidebar-main {
+    height: 100vh;
+    width: 15%;
+    margin-left: 1%;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.stu-dash-div {
+    margin-top: 10%;
+    margin-bottom: 30%;
+    text-align: center;
+}
+
+.stu-dash-span {
+    color: white;
+    font-size: x-large;
+
+}
+
+.stu-dash-sidebar {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-spacing: 0 5vh;
+    border-collapse: separate;
+
+}
+
+.stu-dash-sidebar-icons {
+    color: white;
+    font-size: larger;
+}
+
+.stu-dash-sidebar-item {
+    margin: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: larger;
+}
+
+.stu-dash-sidebar-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.stu-dash-main {
+    padding: 20px;
+    background-color: white;
+    width: 85%;
+}
+
+.stu-dash-header {
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.stu-dash-profile {
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #008080;
+    overflow: hidden;
+}
+
+.student-portal-main-container {
+    justify-content: center;
+}
+
+.student-portal-table{
+    border-collapse: separate;
+      border-spacing: 15px;
+}
+.student-portal-subdiv1 {
+    width: fit-content;
+    border-radius: 0 0 10px 0;
+    padding: 7px;
+    color: white;
+    font-weight: 500;
+}
+
+.student-portal-subdiv2 {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.student-portal-table-td-heading {
+    font-weight: bold;
+}

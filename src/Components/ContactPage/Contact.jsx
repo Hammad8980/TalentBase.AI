@@ -38,7 +38,7 @@ const Contact = () => {
       </div>
       <div className="ContactDiv2">
         <div className="ContactDiv2Div1">
-          <img className='ContactDiv2Div1img' src="./Contact.png" alt="A lady" />
+          <img className='ContactDiv2Div1img' src="./Contact.png  " alt="A lady" />
         </div>
         <div className="ContactDiv2Div2">
           <form onSubmit={handleSubmit}>
