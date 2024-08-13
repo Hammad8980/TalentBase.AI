@@ -9,11 +9,7 @@ import Contact from './Components/ContactPage/Contact';
 import LearningPathDetails from './Components/HomePage/WhatWeDo/LearningPathDetails';
 import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
-<<<<<<< Updated upstream
-import AdminDashboard from './AdminPage/AdminDashboard/AdminDashboard';
-=======
 import StudentDashBoard from './StudentPages/StudentDashBoard';
->>>>>>> Stashed changes
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
 import IndustryDashBoard from './Components/IndustryPages/IndustryDashBoard';
 import Missing from './Components/Missing';
