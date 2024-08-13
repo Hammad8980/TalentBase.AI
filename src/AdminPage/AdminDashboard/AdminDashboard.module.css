@@ -1,0 +1,424 @@
+.adminDashboard {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 14px 33px;
+  }
+  
+  @media (max-width: 991px) {
+    .adminDashboard {
+      padding: 0 20px;
+    }
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 17%;
+    margin-left: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  .sidebarContent {
+    border-radius: 25px;
+    background-color: #008080;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 188px 27px 47px;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebarContent {
+      margin-top: 40px;
+      padding: 100px 20px 0;
+    }
+  }
+  
+  .adminTitle {
+    color: #fff;
+    text-align: center;
+    align-self: center;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  .categoryWrapper {
+    display: flex;
+    margin-top: 105px;
+    gap: 13px;
+  }
+  
+  @media (max-width: 991px) {
+    .categoryWrapper {
+      margin-top: 40px;
+    }
+  }
+  
+  .categoryIcon {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .iconRow {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .iconDot {
+    border-radius: 2px;
+    background-color: #fff;
+    width: 9px;
+    height: 9px;
+  }
+  
+  .categoryText {
+    color: #fff;
+    text-align: center;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  .menuItem {
+    align-self: stretch;
+    display: flex;
+    margin-top: 58px;
+    gap: 8px;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .menuItem {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  
+  .menuIcon {
+    aspect-ratio: 1.04;
+    object-fit: contain;
+    object-position: center;
+    width: 25px;
+  }
+  
+  .menuText {
+    flex-grow: 1;
+  }
+  
+  .logoutWrapper {
+    display: flex;
+    margin-top: 254px;
+    gap: 9px;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .logoutWrapper {
+      white-space: initial;
+      margin: 40px 0 0 5px;
+    }
+  }
+  
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 83%;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      width: 100%;
+    }
+  }
+  
+  .header {
+    display: flex;
+    margin-left: 11px;
+    width: 100%;
+    max-width: 998px;
+    align-items: flex-start;
+    gap: 20px;
+    white-space: nowrap;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font: 500 24px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  
+  .searchInput {
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 11px;
+    color: #d3d3d3;
+    padding: 16px 70px;
+  }
+  
+  @media (max-width: 991px) {
+    .searchInput {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .userInfo {
+    display: flex;
+    gap: 29px;
+    color: #000;
+  }
+  
+  @media (max-width: 991px) {
+    .userInfo {
+      white-space: initial;
+    }
+  }
+  
+  .userAvatar {
+    background-color: #008080;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .userName {
+    margin: auto 0;
+  }
+  
+  .welcomeSection {
+    border-radius: 30px;
+    background-color: #008080;
+    align-self: stretch;
+    display: flex;
+    margin-top: 31px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 52px 70px;
+  }
+  
+  @media (max-width: 991px) {
+    .welcomeSection {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+  .welcomeContent {
+    width: 880px;
+    max-width: 100%;
+  }
+  
+  .welcomeText {
+    display: flex;
+    margin-top: 17px;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .welcomeText {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .welcomeHeading {
+    font-size: 36px;
+    margin-top: 63px;
+  }
+  
+  @media (max-width: 991px) {
+    .welcomeHeading {
+      margin-top: 40px;
+    }
+  }
+  
+  .welcomeMessage {
+    align-self: stretch;
+    margin-top: 25px;
+  }
+  
+  @media (max-width: 991px) {
+    .welcomeMessage {
+      max-width: 100%;
+    }
+  }
+  
+  .userImage {
+    aspect-ratio: 1.03;
+    object-fit: contain;
+    object-position: center;
+    width: 166px;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .userImage {
+      margin-top: 40px;
+    }
+  }
+  
+  .statsSection {
+    display: flex;
+    width: 955px;
+    max-width: 100%;
+    flex-direction: column;
+    color: #000;
+    margin: 38px 0 0 24px;
+    font: 400 24px Ubuntu, sans-serif;
+  }
+  
+  .statsGrid {
+    display: flex;
+    margin-left: 28px;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 991px) {
+    .statsGrid {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  
+  .statItem {
+    border-radius: 35px;
+    background-color: #4169e1;
+    padding: 5px 47px 16px;
+    border: 3px solid #4169e1;
+  }
+  
+  @media (max-width: 991px) {
+    .statItem {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .sectionTitle {
+    align-self: flex-start;
+    margin-top: 45px;
+  }
+  
+  @media (max-width: 991px) {
+    .sectionTitle {
+      margin-top: 40px;
+    }
+  }
+  
+  .instructorsTitle {
+    align-self: flex-end;
+    margin-top: 14px;
+  }
+  
+  @media (max-width: 991px) {
+    .instructorsTitle {
+      margin-right: 2px;
+    }
+  }
+  
+  .chartSection {
+    width: 965px;
+    max-width: 100%;
+    margin: 12px 0 0 22px;
+  }
+  
+  .chartImage {
+    aspect-ratio: 1.88;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .chartImage {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .instructorsList {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .instructorsList {
+      margin-top: 40px;
+    }
+  }
+  
+  .instructorGrid {
+    align-self: flex-start;
+    display: flex;
+    gap: 40px 42px;
+  }
+  
+  .instructorAvatar {
+    background-color: #008080;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .seeAllLink {
+    margin-top: 51px;
+    color: #4169e1;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .seeAllLink {
+      margin-top: 40px;
+    }
+  }

@@ -9,7 +9,7 @@ import Contact from './Components/ContactPage/Contact';
 import LearningPathDetails from './Components/HomePage/WhatWeDo/LearningPathDetails';
 import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
-
+import AdminDashboard from './AdminPage/AdminDashboard/AdminDashboard';
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
 import IndustryDashBoard from './Components/IndustryPages/IndustryDashBoard';
 import Missing from './Components/Missing';
