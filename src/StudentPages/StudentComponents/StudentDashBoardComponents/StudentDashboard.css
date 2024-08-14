@@ -51,6 +51,7 @@
 }
 
 
+
 .stu-dash-main {
     padding: 20px;
     background-color: white;
@@ -62,6 +63,23 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.stu-dash-header-div2 {
+    width: 50vh;
+    height: fit-content;
+    overflow: hidden;
+    border-style: solid;
+}
+
+.stu-dash-header-div2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .stu-dash-profile {
@@ -78,10 +96,6 @@
     justify-content: center;
 }
 
-.student-portal-table {
-    border-collapse: separate;
-    border-spacing: 15px;
-}
 
 .student-portal-subdiv1 {
     width: fit-content;
@@ -96,7 +110,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.student-portal-table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 50%;
 }
 
 .student-portal-table-td-heading {

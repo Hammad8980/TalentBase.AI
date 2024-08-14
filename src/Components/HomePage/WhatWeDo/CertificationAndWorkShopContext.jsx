@@ -1,13 +1,13 @@
 import React, { createContext, useState } from 'react';
 
-export const CandWContext = createContext();
+export const WhatWeDoContext = createContext();
 
-export const CandWDataProvider = ({ children }) => {
-  const [CandWData, setCandWData] = useState({ Title: '', Data: '' });
+export const WhatWeDoDataProvider = ({ children }) => {
+  const [WhatWEDoServicesTitleAndData, setWhatWeDoServicesTitleAndData] = useState({ Title: '', Data: '' });
 
   return (
-    <CandWContext.Provider value={{ CandWData, setCandWData }}>
+    <WhatWeDoContext.Provider value={{ WhatWEDoServicesTitleAndData, setWhatWeDoServicesTitleAndData }}>
       {children}
-    </CandWContext.Provider>
+    </WhatWeDoContext.Provider>
   );
 };

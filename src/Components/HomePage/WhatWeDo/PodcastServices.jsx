@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { WhatWeDoContext } from './CertificationAndWorkShopContext';
 
-const CertificaionAndWorkshop = ({ Title, Data }) => {
+const PodcastServices = ({ Title, Data }) => {
   const { setWhatWeDoServicesTitleAndData } = useContext(WhatWeDoContext);
 
   const handleLearnMoreClick = () => {
@@ -20,4 +20,4 @@ const CertificaionAndWorkshop = ({ Title, Data }) => {
   );
 };
 
-export default CertificaionAndWorkshop;
+export default PodcastServices;

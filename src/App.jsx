@@ -1,11 +1,10 @@
-import Navbar from './Components/NavbarPage/NavBar';
 import Home from './Components/HomePage/Home';
 import Startups from './Components/StartupsPage/Startups';
 import Services from './Components/ServicesPage/Services';
 import Blog from './Components/BlogPage/Blog';
 import TNSFS from './Components/TNSFS';
 import Contact from './Components/ContactPage/Contact';
-import LearningPathDetails from './Components/HomePage/WhatWeDo/LearningPathDetails';
+import LearningStreams from './Components/HomePage/WhatWeDo/LearningStreams';
 import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
 import StudentDashBoard from './StudentPages/StudentDashBoard';
@@ -35,7 +34,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/tnsfs" element={<TNSFS />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/learningPathDetails" element={<LearningPathDetails />} />
+          <Route path="/learningstream" element={<LearningStreams />} />
         </Route>
 
         {/* Routes for Student */}

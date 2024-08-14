@@ -6,17 +6,17 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AuthProvider } from './Context/AuthProvider';
-import { CandWDataProvider } from './Components/HomePage/WhatWeDo/CertificationAndWorkShopContext';
+import { WhatWeDoDataProvider } from './Components/HomePage/WhatWeDo/CertificationAndWorkShopContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AuthProvider>
-      <CandWDataProvider>
+      <WhatWeDoDataProvider>
         <Router>
           <App />
         </Router>
-      </CandWDataProvider>
+      </WhatWeDoDataProvider>
     </AuthProvider>
   </React.StrictMode>
 );

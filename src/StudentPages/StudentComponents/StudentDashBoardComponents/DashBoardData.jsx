@@ -10,9 +10,10 @@ function Dashboard() {
           <h2>Welcome back, John!</h2>
           <p>Always stay updated in your student portal</p>
         </div>
-        <div>
-          <img className='ContactDiv2Div1img' src="./StudentPortal.png  " alt="A Sad Happy Student" />
+        <div className='stu-dash-header-div2'>
+          <img src="./StudentPortal.png  " alt="A Sad Happy Student" />
         </div>
+
       </div>
 
       <UserProfle />
