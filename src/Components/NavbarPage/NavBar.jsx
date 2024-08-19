@@ -147,7 +147,7 @@ const NavBar = ({ icon, text }) => {
     <nav className="App-header navbar sticky-top navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          TALENTBASE.
+          <img className="logo" src="/tbaiblack.png"></img>
         </a>
         <div>
           <div className="d-flex   " style={{ gap: 0, position: "relative" }}>

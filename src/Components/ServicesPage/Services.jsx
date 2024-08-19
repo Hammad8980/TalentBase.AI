@@ -13,9 +13,16 @@ const Services = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 998,
+        breakpoint: 1375, // Below 1375px width
         settings: {
-          slidesToShow: 1, // Show only 1 card on screens 998px or less
+          slidesToShow: 2, // Show 2 cards
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1000, // Below 1000px width
+        settings: {
+          slidesToShow: 1, // Show 1 card
           slidesToScroll: 1,
         },
       },
@@ -104,7 +111,6 @@ const Services = () => {
           {/* Add more cards here if needed */}
         </Slider>
         <br />
-        <button className="view-all-button">View All</button>
       </div>
     </div>
   );

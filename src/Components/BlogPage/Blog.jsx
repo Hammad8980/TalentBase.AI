@@ -23,11 +23,10 @@ const Blog = () => {
     <div className="Blog SidePadding PrimaryColor2 PrimaryFont CompMargin animate__fadeInUp">
       <div className="BlogDiv1">
         <p className='BlogDiv1P1'>Our Blog</p>
-        <p className='BlogDiv1P2'>loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf</p>
       </div>
       <div className="BlogDiv2">
-        {blogs.map(blog => (
-          <BlogComp blog={blog} />
+      {blogs.map((blog, index) => (
+          <BlogComp key={index} blog={blog} />
         ))}
       </div>
     </div>

@@ -8,14 +8,14 @@ const BlogComp = ({ blog }) => {
                 <p className='BlogCompP2'>{(blog.body).length <= 125 ? blog.body : `${(blog.body).slice(0, 125)}...`}</p>
                 <div className='BlogCompDiv1'><img className='BlogCompImg' src="./bunny.jpg" alt="Your image description" /></div>
             </button>
-            <div class="modal fade" id="centeredModal" tabindex="-1" aria-labelledby="centeredModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="centeredModalLabel">{blog.title}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal fade" id="centeredModal" tabIndex="-1" aria-labelledby="centeredModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="centeredModalLabel">{blog.title}</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <p>{blog.body}</p>
                         </div>
                     </div>
