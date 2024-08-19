@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogComp from './BlogComp'
-
+import "./Blog.css"
 
 const Blog = () => {
 
