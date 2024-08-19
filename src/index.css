@@ -1,3 +1,8 @@
+.OffScreen {
+  position: absolute;
+  left: -9999px;
+}
+
 .PrimaryColor1 {
   background-color: #008080;
 }

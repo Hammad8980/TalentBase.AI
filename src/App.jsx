@@ -8,7 +8,9 @@ import Contact from './Components/ContactPage/Contact';
 import LearningStreams from './Components/HomePage/WhatWeDo/LearningStreams';
 import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
-import StudentDashBoard from './StudentPages/StudentDashBoard';
+import StudentPortal from './StudentPages/StudentPortal';
+import StudentStartups from './StudentPages/StudentStartups';
+import StudentBlogs from './StudentPages/StudentBlogs';
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
 import IndustryDashBoard from './Components/IndustryPages/IndustryDashBoard';
 import Missing from './Components/Missing';
@@ -40,7 +42,10 @@ function App() {
 
         {/* Routes for Student */}
         <Route element={<StudentLayout />}>
-          <Route path="/studentDashboard" element={<StudentDashBoard />} />
+          <Route path="/studentDashboard/*" element={<StudentPortal />} />
+          <Route path="/studentstartups" element={<StudentStartups />} />
+          <Route path="/studentblogs" element={<StudentBlogs />} />
+          <Route path="/blogsexplore" element={<Blog />} />
         </Route>
 
         {/* Routes for Academia*/}

@@ -1,0 +1,41 @@
+/* UserLayout.css */
+
+.StudentLayout {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+.stu-dash-main {
+  padding: 20px;
+  background-color: white;
+}
+
+.stu-dash-header {
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.stu-dash-header-div2 {
+  width: 50vh;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.stu-dash-header-div2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1350px) {
+  .StudentLayout {
+    flex-direction: column;
+  }
+}
