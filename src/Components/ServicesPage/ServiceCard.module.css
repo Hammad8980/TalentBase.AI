@@ -1,0 +1,81 @@
+.serviceCard {
+    border-radius: 20px;
+    background-color: teal;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 1048px;
+    padding: 30px 60px 56px;
+    display: flex;
+    gap: 20px;
+    margin-top: 65px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font: 400 15px Ubuntu, sans-serif;
+    width: 50%;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .description,
+  .longDescription {
+    margin-bottom: 52px;
+  }
+  
+  .ctaButton {
+    border-radius: 7px;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 14px 23px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    align-self: center;
+    width: 312px;
+    max-width: 100%;
+  }
+  
+  .buttonIcon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .imageWrapper {
+    background-color: #d9d9d9;
+    width: 370px;
+    height: 370px;
+    margin: 25px auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .serviceCard {
+      flex-direction: column;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+  
+    .contentWrapper {
+      width: 100%;
+    }
+  
+    .ctaButton {
+      margin-top: 40px;
+      padding: 14px 20px;
+    }
+  
+    .imageWrapper {
+      margin-top: 40px;
+    }
+  }

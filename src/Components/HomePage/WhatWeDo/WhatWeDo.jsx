@@ -1,5 +1,5 @@
 import React from 'react';
-import Services from '../../ServicesPage/Services';
+import Services from './Services';
 import './WhatWeDo.css'
 
 
