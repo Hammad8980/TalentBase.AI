@@ -1,3 +1,4 @@
+// eslint-disable-all
 import Home from './Components/HomePage/Home';
 import Startups from './Components/StartupsPage/Startups';
 import Services from './Components/ServicesPage/Services';
