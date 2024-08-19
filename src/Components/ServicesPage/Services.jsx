@@ -8,17 +8,18 @@ const servicesData = [
     description: "loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf",
     longDescription: "loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg",
     buttonText: "Request for Services",
-    imageSrc: ""
+    imageSrc: "./podcast2.jpg"
   },
   {
     title: "DIGITAL",
     description: "loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg fnvefbubh bgjbiogjroib gboigoibj fveujir huihtrhg iuthiutruitr itrtriutrj jegiejrigre ifoioitjeogjetj etejiotrjoitjr ejwoiweoife ewfoirf hf",
     longDescription: "loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg loreum pas fhihrib jorgtjbgrb ibhfuihv hiugehih bugiubg",
-    buttonText: "Request for Services"
+    buttonText: "Request for Services",
+    imageSrc: "./podcast2.jpg"
   }
 ];
 
-const Services = () => {
+const Services = ( imageSrc ) => {
   return (
     <main className={styles.servicesContainer}>
       <div className={styles.servicesWrapper}>

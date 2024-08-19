@@ -21,12 +21,13 @@
   .title {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   .description,
   .longDescription {
     margin-bottom: 52px;
+    text-align: justify;
   }
   
   .ctaButton {
@@ -36,7 +37,7 @@
     align-items: center;
     justify-content: center;
     gap: 19px;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 500;
     padding: 14px 23px;
     border: none;
@@ -45,37 +46,51 @@
     align-self: center;
     width: 312px;
     max-width: 100%;
+    margin-top: auto;
   }
   
   .buttonIcon {
-    width: 28px;
-    height: 28px;
+    width: 2.8vh;
   }
   
   .imageWrapper {
     background-color: #d9d9d9;
-    width: 370px;
-    height: 370px;
+    width: 23.125rem;
+    height: 23.125rem;
     margin: 25px auto 0;
+    border-radius: 5%; 
   }
-  
+
   @media (max-width: 991px) {
     .serviceCard {
+      display: flex;
       flex-direction: column;
-      padding: 30px 20px;
-      margin-top: 40px;
+      padding: 5px 20px;
+      margin-top: 5%;
     }
   
     .contentWrapper {
       width: 100%;
     }
-  
+    
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: -20px;
+      margin-bottom: 40px;
+      align-self: center;
+    }
+
     .ctaButton {
-      margin-top: 40px;
+      margin-bottom: 20px;
       padding: 14px 20px;
+      font-size: 15px;
     }
   
     .imageWrapper {
-      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 90%;
+      height: auto;
     }
+
   }
