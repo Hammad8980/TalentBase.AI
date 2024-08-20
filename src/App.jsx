@@ -11,6 +11,7 @@ import LogIn from './LogInPage/LogIn';
 import StudentPortal from './StudentPages/StudentPortal';
 import StudentStartups from './StudentPages/StudentStartups';
 import StudentBlogs from './StudentPages/StudentBlogs';
+import AdminDashboard from './AdminPage/AdminDashboard/AdminDashboard'
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
 import IndustryDashBoard from './Components/IndustryPages/IndustryDashBoard';
 import Missing from './Components/Missing';
@@ -38,6 +39,7 @@ function App() {
           <Route path="/tnsfs" element={<TNSFS />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/learningstream" element={<LearningStreams />} />
+          <Route path="/adminDashboard" element={<AdminDashboard />} />
         </Route>
 
         {/* Routes for Student */}
@@ -57,8 +59,12 @@ function App() {
         <Route element={<RequireAuth allowedRoles={[Roles.Industry]} />}>
           <Route path="/industryDashboard" element={<IndustryDashBoard />} />
         </Route>
-
-
+        /*
+        {/* Routes for Admin */}
+        <Route element={<RequireAuth allowedRoles={[Roles.Admin]} />}>
+          <Route path="/adminDashboard" element={<AdminDashboard />} />
+        </Route>*/
+        
         {/* Public Routes */}
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />

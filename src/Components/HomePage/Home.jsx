@@ -4,7 +4,7 @@ import Testimonials from './Testimonials/Testimonials';
 import Blog from '../BlogPage/Blog';
 import Newsletter from './NewsLetter/NewsLetter';
 import Footer from './Footer/Footer';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate(); 
@@ -20,6 +20,8 @@ const Home = () => {
         <button className="start-button" onClick={handleGetStartedClick}>GET STARTED</button>
         <span>or</span>
         <a href="/video">Watch video</a>
+        <span>or</span>
+        <Link to={"/adminDashboard"}>Admin</Link>
       </div>
       </main>
       <WhatWeDo />
