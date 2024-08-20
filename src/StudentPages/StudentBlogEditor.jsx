@@ -1,6 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 
 const StudentBlogEditor = () => {
+  const navigate = useNavigate();
+
   const subjectRef = useRef();
   const errorRef = useRef();
 
@@ -46,13 +51,24 @@ const StudentBlogEditor = () => {
     // Add form submission logic here
     console.log("Publish clicked");
   };
+
+  const GoBack = () => {
+    navigate(-1);
+  }
+
   return (
     <div>
-      <div className='stu-blog-editor'>
-        <div className='student-blog-editor-subdiv1 PrimaryColor1'>
+      <div className='stu-portal-button-div'>
+        <button className='stu-portal-button PrimaryColor1' onClick={GoBack}>
+          <FontAwesomeIcon icon={faAnglesLeft} />
+          <div>Discard</div>
+        </button>
+      </div>
+      <div className='stu-portal-box-main-div'>
+        <div className='student-portal-subdiv1 PrimaryColor1'>
           <span>Type Here</span>
         </div>
-        <div className='student-blog-editor-subdiv2'>
+        <div className='student-portal-subdiv2'>
           <form style={{ width: "100%" }}>
             <div className="stu-blog-editor-form-div">
               <label htmlFor="subject" className="OffScreen">
@@ -88,11 +104,11 @@ const StudentBlogEditor = () => {
         </div>
       </div>
 
-      <div className='stu-blog-editor'>
-        <div className='student-blog-editor-subdiv1 PrimaryColor1'>
+      <div className='stu-portal-box-main-div'>
+        <div className='student-portal-subdiv1 PrimaryColor1'>
           <span>Keywords</span>
         </div>
-        <div className='student-blog-editor-subdiv2'>
+        <div className='student-portal-subdiv2'>
           <form style={{ width: "100%" }}>
             <div className="stu-blog-editor-form-div">
               <label htmlFor="keywords" className="OffScreen">

@@ -1,7 +1,7 @@
 import React from 'react'
 import WhatWeDo from './WhatWeDo/WhatWeDo';
 import Testimonials from './Testimonials/Testimonials';
-import Blog from '../BlogPage/Blog';
+import Blog from '../BlogPageMini/Blog';
 import Newsletter from './NewsLetter/NewsLetter';
 import Footer from './Footer/Footer';
 import { useNavigate } from 'react-router-dom';
