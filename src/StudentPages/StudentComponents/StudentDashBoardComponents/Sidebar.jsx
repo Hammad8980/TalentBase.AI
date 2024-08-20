@@ -35,7 +35,7 @@ function Sidebar() {
             </tr>
             <tr>
               <td className="stu-dash-sidebar-icons"><FontAwesomeIcon icon={faCircleMinus} /></td>
-              <td className="stu-dash-sidebar-item">Services</td>
+              <td className="stu-dash-sidebar-item"><Link to={"/studentservices"}>Services</Link></td>
             </tr>
             <tr>
               <td className="stu-dash-sidebar-icons"><FontAwesomeIcon icon={faCalendarDays} /></td>
@@ -44,7 +44,7 @@ function Sidebar() {
             <div style={{ marginTop: '25%' }} >
               <tr >
                 <td className="stu-dash-sidebar-icons"><FontAwesomeIcon icon={faRightFromBracket} /></td>
-                <td className="stu-dash-sidebar-item">Logout</td>
+                <td className="stu-dash-sidebar-item"><Link to={"/"}>Logout</Link></td>
               </tr>
             </div>
 

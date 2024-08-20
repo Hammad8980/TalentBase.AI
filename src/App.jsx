@@ -2,7 +2,7 @@
 import Home from './Components/HomePage/Home';
 import Startups from './Components/StartupsPage/Startups';
 import Services from './Components/ServicesPage/Services';
-import Blog from './Components/BlogPage/Blog';
+import Blog from './Components/BlogPageMini/Blog';
 import TNSFS from './Components/TNSFS';
 import Contact from './Components/ContactPage/Contact';
 import LearningStreams from './Components/HomePage/WhatWeDo/LearningStreams';
@@ -10,6 +10,7 @@ import SignUp from './SignUpPage/SignUp';
 import LogIn from './LogInPage/LogIn';
 import StudentPortal from './StudentPages/StudentPortal';
 import StudentStartups from './StudentPages/StudentStartups';
+import StudentBlogEditor from './StudentPages/StudentBlogEditor';
 import StudentBlogs from './StudentPages/StudentBlogs';
 import AdminDashboard from './AdminPage/AdminDashboard/AdminDashboard'
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
@@ -46,8 +47,10 @@ function App() {
         <Route element={<StudentLayout />}>
           <Route path="/studentDashboard/*" element={<StudentPortal />} />
           <Route path="/studentstartups" element={<StudentStartups />} />
+          <Route path="/studentblogeditor" element={<StudentBlogEditor />} />
           <Route path="/studentblogs" element={<StudentBlogs />} />
           <Route path="/blogsexplore" element={<Blog />} />
+          <Route path="/studentservices" element={<Services />} />
         </Route>
 
         {/* Routes for Academia*/}

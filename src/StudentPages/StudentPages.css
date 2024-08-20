@@ -5,7 +5,30 @@
     gap: 1%;
 }
 
-.stu-blog-editor {
+.stu-portal-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stu-portal-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    font-size: larger;
+}
+
+
+.student-portal-main-container {
+    justify-content: center;
+}
+
+.stu-portal-box-main-div {
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -15,7 +38,7 @@
     overflow: hidden;
 }
 
-.student-blog-editor-subdiv1 {
+.student-portal-subdiv1 {
     width: fit-content;
     border-radius: 0 0 10px 0;
     padding: 7px;
@@ -23,12 +46,25 @@
     font-weight: 500;
 }
 
-.student-blog-editor-subdiv2 {
+.student-portal-subdiv2 {
     margin: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.student-portal-table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 50%;
+}
+
+
+.student-portal-table-td-heading {
+    font-weight: bold;
+}
+
 
 .stu-blog-editor-form-div {
     margin-bottom: 20px;
@@ -54,17 +90,17 @@
     height: 1vh;
 }
 
+.keywords-list {
+    margin-top: 10px;
+}
+
 .keyword-item {
     display: inline-block;
     margin: 5px;
-    padding: 5px 10px;
     background-color: #008080;
+    padding: 5px 10px;
     color: white;
     border-radius: 4px;
-}
-
-.keywords-list {
-    margin-top: 10px;
 }
 
 .stu-blog-editor-form-error-box {
@@ -81,4 +117,28 @@
     width: 15vw;
     height: 6vh;
     color: white;
+}
+
+.stu-startup-card-name {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stu-startup-card-logo {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stu-startup-card-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }

@@ -11,28 +11,28 @@ import './StudentDashboard.css';
 function UserProfile() {
   return (
     <>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <PersonalInformation />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <AcademicBackground />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <ProfessionalBackground />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <AchievementsAndAwards />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <ProfessionalNetworks />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <Publications />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <PersonalStatement />
       </div>
-      <div className="stu-dash-profile" >
+      <div className="stu-portal-box-main-div" >
         <OpenToWork />
       </div>
     </>
