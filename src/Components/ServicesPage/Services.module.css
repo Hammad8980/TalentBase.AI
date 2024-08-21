@@ -19,7 +19,7 @@
     color: #000;
     align-self: flex-start;
     font: 700 3.7vh Ubuntu, sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
   
   @media (max-width: 991px) {
@@ -29,7 +29,7 @@
     }
   
     .servicesTitle {
-      font: 700 2.5vh Ubuntu, sans-serif;
+      font: 700 3.5vh Ubuntu, sans-serif;
       align-self: center;
       margin-bottom: 10px;
     }

@@ -7,7 +7,9 @@
     padding: 30px 60px 56px;
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease;
     margin-top: 65px;
+    cursor: pointer;
   }
   
   .contentWrapper {
@@ -17,11 +19,18 @@
     font: 400 15px Ubuntu, sans-serif;
     width: 50%;
   }
+
+  .expanded {
+    width: 100%; /* Full width when expanded */
+    flex-direction: row; /* Stack content vertically */
+    cursor: default; /* Disable pointer cursor when expanded */
+  }
   
   .title {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
+
   }
   
   .description,
@@ -32,7 +41,7 @@
   
   .ctaButton {
     border-radius: 7px;
-    background-color: coral;
+    background-color: rgb(64, 171, 180);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,10 +64,34 @@
   
   .imageWrapper {
     background-color: #d9d9d9;
-    width: 23.125rem;
-    height: 23.125rem;
+    width: 90%;
+    height: auto;
     margin: 25px auto 0;
-    border-radius: 5%; 
+    border-radius: 5%;
+  }
+
+  .backButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgb(64, 171, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 14px 23px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    align-self: center;
+    width: 312px;
+    max-width: 100%;
+  }
+  
+  .backButton:hover, .ctaButton:hover {
+    background-color:lightslategray; /* Darker red on hover */
   }
 
   @media (max-width: 991px) {
@@ -74,7 +107,7 @@
     }
     
     .title {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       margin-top: -20px;
       margin-bottom: 40px;
@@ -86,6 +119,11 @@
       padding: 14px 20px;
       font-size: 15px;
     }
+    .backButton {
+      margin-bottom: 20px;
+      padding: 14px 20px;
+      font-size: 15px;
+    }
   
     .imageWrapper {
       margin-bottom: 20px;
@@ -93,4 +131,14 @@
       height: auto;
     }
 
+    .expanded {
+      .ctaButton {
+        margin-bottom: 0px;
+        padding: 14px 20px;
+        font-size: 15px;
+      }
+      width: 100%;
+      flex-direction: column; /* Stack content vertically */
+      cursor: default; /* Disable pointer cursor when expanded */
+    }
   }
