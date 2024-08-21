@@ -1,8 +1,7 @@
 import '../StudentDashboard.css';
 
-function AchievementsAndAwards() {
-  const Achievements = 'Lots of.....';
-  const Awards = 'Gold Medal';
+function AchievementsAndAwards ({achievementsAndAwards}) {
+  const {Achievements = "Ø Undefined", Awards = "Ø Undefined"} = achievementsAndAwards;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Achievements & Awards</span></div>

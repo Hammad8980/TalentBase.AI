@@ -1,9 +1,8 @@
 import '../StudentDashboard.css';
 
-function PersonalStatement() {
-  const Goals = 'These are my goals';
-  const Visions = 'This is my vision';
-  const Biography = 'This is my biagraphy';
+function PersonalStatement ({personalStatement}) {
+  if (!personalStatement) return <div>No personal information available.</div>;
+  const {Goals = "Ø Undefined", Visions = "Ø Undefined", Biography = "Ø Undefined"} = personalStatement;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Personal Statement</span></div>

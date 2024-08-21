@@ -1,9 +1,7 @@
 import '../StudentDashboard.css';
 
-function AcademicBackground() {
-  const YearOfCompletion = '2024';
-  const CurrentEducation = 'BSCS';
-  const Degree = 'Bachelors in Computer Science';
+function AcademicBackground ({academicBackground}) {
+  const {YearOfCompletion = "Ø Undefined", CurrentEducation = "Ø Undefined",  Degree = "Ø Undefined"} = academicBackground;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Academic Background</span></div>

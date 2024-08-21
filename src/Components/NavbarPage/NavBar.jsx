@@ -202,7 +202,7 @@ const NavBar = ({ icon, text }) => {
             <Link className="nav-link" to="/tnsfs" onClick={closePopover}>
               TNSFS
             </Link>
-            <Link className="nav-link" to="/blog" onClick={closePopover}>
+            <Link className="nav-link" to="/allblogs" onClick={closePopover}>
               Blog
             </Link>
             <Link className="nav-link" to="/contact" onClick={closePopover}>

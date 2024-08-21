@@ -1,0 +1,76 @@
+.Blog {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .BlogDiv1 {
+    width: 50%;
+    margin-bottom: 10%;
+    overflow: hidden;
+  }
+  
+  .BlogDiv1P1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .BlogDiv2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5%;
+  }
+  
+  /*Blog Comp*/
+  
+  .BlogComp {
+    border-radius: 20px; /* Rounds the corners */
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 3% 3% 0;
+}
+
+.BlogComp:hover {
+    transform: scale(1.02); /* Slightly enlarges the button on hover */
+}
+
+.BlogCompP1 {
+    font-size: 1.5rem; /* Font size for the subject/title */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space below the subject */
+    color: white;
+}
+
+.BlogCompP2 {
+    font-size: 1rem; /* Font size for the body */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 15px; /* Adds space below the body */
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensures text does not overflow */
+}
+
+.BlogCompKeywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.BlogCompKeyword {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.BlogCompKeyword:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darkens the background on hover */
+}

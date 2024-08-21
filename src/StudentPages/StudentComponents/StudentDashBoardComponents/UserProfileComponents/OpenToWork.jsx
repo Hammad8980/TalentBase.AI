@@ -1,12 +1,7 @@
 import '../StudentDashboard.css';
 
-function OpenToWork() {
-    const Jobs = true;
-    const Projects = false;
-    const Internships = true;
-    const Funding = false;
-    const Acquisition = true;
-    const Collaborations = false;
+function OpenToWork ({openToWork}) {
+    const {Jobs = false, Projects = false, Internships = false, Funding = false, Acquisition = false, Collaborations = false} = openToWork;
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Open To Work</span></div>

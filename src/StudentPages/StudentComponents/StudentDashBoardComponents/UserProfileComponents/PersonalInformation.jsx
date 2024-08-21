@@ -1,12 +1,7 @@
 import '../StudentDashboard.css';
 
-function PersonalInformation() {
-  const Name = 'John Doe';
-  const Email = 'john.doe@example.com';
-  const PhoneNumber = '+1 (555) 123-4567';
-  const PersonalWebsite = 'https://johnswebsite.com';
-  const LinkedIn = 'https://linkedin.com/in/johndoe';
-  const Location = 'New York, NY';
+function PersonalInformation({personalInformation = {}}) {
+  const { Name="Ø Undefined", Email="Ø Undefined", PhoneNumber="Ø Undefined", PersonalWebsite="Ø Undefined", LinkedIn="Ø Undefined", Location="Ø Undefined" } = personalInformation;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Personal Information</span></div>

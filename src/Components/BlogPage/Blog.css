@@ -1,0 +1,122 @@
+.Blog {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .BlogDiv1 {
+    width: 50%;
+    margin-bottom: 10%;
+    overflow: hidden;
+  }
+  
+  .BlogDiv1P1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .BlogDiv2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5%;
+  }
+  
+  /*Blog Comp*/
+  
+  .BlogComp {
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 3% 3% 0;
+}
+
+.BlogComp:hover {
+    transform: scale(1.02);
+}
+
+.BlogCompP1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.BlogCompP2 {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.BlogCompKeywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.BlogCompKeyword {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.BlogCompKeyword:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*Detailed Blog*/
+.detail-blog-main-div {
+    min-height: 100vh;
+    padding: 3%;
+}
+
+.detailed-blog-main-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.detailed-blog-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    font-size: larger;
+}
+
+.detailed-blog-subdiv2 {
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.detailed-blog-subdiv2-p1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10vh;
+}
+
+.detailed-blog-subdiv2-p2 {
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15vh;
+  }

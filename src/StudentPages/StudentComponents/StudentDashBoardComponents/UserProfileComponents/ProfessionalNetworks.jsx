@@ -1,8 +1,8 @@
 import '../StudentDashboard.css';
 
-function ProfessionalNetworks() {
-  const Mentors = 'Ali Doe';
-  const Association = 'Something';
+function ProfessionalNetworks ({professionalNetworks}) {
+  if (!professionalNetworks) return <div>No personal information available.</div>;
+  const {Mentors = "Ø Undefined", Association = "Ø Undefined"} = professionalNetworks;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Professional Networks</span></div>
