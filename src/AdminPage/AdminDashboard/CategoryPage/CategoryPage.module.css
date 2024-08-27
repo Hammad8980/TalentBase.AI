@@ -1,0 +1,361 @@
+.categoryPage {
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 285px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  @media (max-width: 991px) {
+    .categoryPage {
+      padding-bottom: 100px;
+    }
+  }
+  
+  .header {
+    background-color: #d9d9d9;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    gap: 40px 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 80px 20px 38px;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+  .searchContainer {
+    flex-basis: auto;
+  }
+  
+  @media (max-width: 991px) {
+    .searchContainer {
+      max-width: 100%;
+    }
+  }
+  
+  .searchWrapper {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .searchWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .logoColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 22%;
+    margin-left: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .logoColumn {
+      width: 100%;
+    }
+  }
+  
+  .logo {
+    aspect-ratio: 0.96;
+    object-fit: contain;
+    object-position: center;
+    width: 118px;
+    border-radius: 30px;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .logo {
+      margin-top: 40px;
+    }
+  }
+  
+  .searchColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 78%;
+    margin-left: 20px;
+  }
+  .searchColumn ::placeholder{
+    opacity: 50%;
+  }
+  
+  @media (max-width: 991px) {
+    .searchColumn {
+      width: 100%;
+    }
+    
+  }
+  
+  .searchInput {
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.25);
+    align-self: stretch;
+    color: #d3d3d3;
+    text-align: left;
+    width: 100%;
+    margin: auto 0;
+    padding: 15px 70px;
+    font: 500 26px Ubuntu, sans-serif;
+  }
+
+  
+  @media (max-width: 991px) {
+    .searchInput {
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .userInfo {
+    display: flex;
+    gap: 24px;
+    color: #000;
+    text-align: center;
+    margin: auto 0;
+    font: 500 24px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .userInfo {
+      white-space: initial;
+    }
+  }
+  
+  .userAvatar {
+    background-color: #008080;
+    border-radius: 50%;
+    display: flex;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .userName {
+    margin: auto 0;
+  }
+  
+  .categoryTitle {
+    background-color: #008080;
+    align-self: stretch;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    padding: 40px 70px 40px;
+    font: 500 27px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .categoryTitle {
+      max-width: 100%;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .categoryContent {
+    border-radius: 25px;
+    background-color: #d9d9d9;
+    display: flex;
+    position: sticky;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1378px;
+    flex-direction: column;
+    padding: 20px 20px 23px 73px;
+  }
+  
+  @media (max-width: 991px) {
+    .categoryContent {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  .StartupContent {
+    border-radius: 25px;
+    background-color: #d9d9d9;
+    display: flex;
+    position: sticky;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1378px;
+    flex-direction: column;
+    padding: 20px 20px 23px 73px;
+  }
+  
+  .categoryType {
+    color: #000;
+    text-align: center;
+    align-self: flex-start;
+    font: 400 24px Ubuntu, sans-serif;
+  }
+  
+  .categoryDetails {
+    align-self: flex-start;
+    margin-top: 35px;
+    width: 100%;
+    max-width: 1247px;
+  }
+  
+  @media (max-width: 991px) {
+    .categoryDetails {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .detailsWrapper {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 991px) {
+    .detailsWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .detailsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 67%;
+    margin-right: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .detailsColumn {
+      width: 100%;
+    }
+  }
+  
+  .detailsInfo {
+    display: flex;
+    flex-grow: 1;
+    align-items: start;
+    gap: 10px;
+    color: #000;
+    text-align: center;
+    padding-right: 30px;
+    justify-content: space-between;
+    font: 400 20px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .detailsInfo {
+      max-width: 100%;
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  
+  .detailItem {
+    margin-top: 19px;
+  }
+  
+  .separator {
+    align-self: stretch;
+    width: 5px;
+    height: 103px;
+    border: 5px solid #fff;
+  }
+  
+  .actionsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 43%;
+    align-items: flex-end;
+  }
+  
+  @media (max-width: 991px) {
+    .actionsColumn {
+      width: 100%;
+    }
+  }
+  
+  .actionButtons {
+    display: flex;
+    margin-top: 41px;
+    flex-grow: 1;
+    align-items: start;
+    gap: 30px;
+    color: #fff;
+    text-align: center;
+    font: 500 20px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .actionButtons {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  
+  .actionButton {
+    border-radius: 30px;
+    border: none;
+    color: white;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);
+    background-color: #4169e1;
+    padding: 15px 44px;
+  }
+  
+  @media (max-width: 991px) {
+    .actionButton {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .additionalCategory {
+    border-radius: 25px;
+    background-color: #d9d9d9;
+    margin-top: 39px;
+    width: 1378px;
+    max-width: 100%;
+    color: #000;
+    text-align: left;
+    padding: 25px 70px 25px;
+    font: 400 24px Ubuntu, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .additionalCategory {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }

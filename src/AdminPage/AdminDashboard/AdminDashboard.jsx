@@ -4,6 +4,7 @@ import SidebarMenuItem from './SidebarMenuItem';
 import StatItem from './StatItem';
 import InstructorAvatar from './InstructorAvatar';
 import { format } from 'date-fns';
+import { Link } from 'react-router-dom';
 
 const menuItems = [
   { icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/fa8eb16b0e57c2bd07d87dbe35685586c3275b2da3eaf85d2ccfba267df5fb9b?placeholderIfAbsent=true&apiKey=168c23e5e966425abe0e4b54edde3b42', text: 'Notifications' },
@@ -22,6 +23,7 @@ const stats = [
 function AdminDashboard() {
   const currentDate = new Date();
   const formattedDate = format(currentDate, 'do MMMM, yyyy');
+
   return (
     <div className={styles.adminDashboard}>
       <div className={styles.container}>
@@ -39,7 +41,7 @@ function AdminDashboard() {
                   <div className={styles.iconDot} />
                 </div>
               </div>
-              <span className={styles.categoryText}>Category</span>
+              <Link to={"/categoryPage"}><span className={styles.categoryText}>Category</span></Link>
             </div>
             {menuItems.map((item, index) => (
               <SidebarMenuItem key={index} icon={item.icon} text={item.text} />

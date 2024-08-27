@@ -16,6 +16,7 @@ import StudentStartups from './StudentPages/StudentStartups';
 import StudentBlogEditor from './StudentPages/StudentBlogEditor';
 import StudentBlogs from './StudentPages/StudentBlogs';
 import AdminDashboard from './AdminPage/AdminDashboard/AdminDashboard'
+import CategoryPage from './AdminPage/AdminDashboard/CategoryPage/CategoryPage';
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
 import IndustryDashBoard from './Components/IndustryPages/IndustryDashBoard';
 import Missing from './Components/Missing';
@@ -46,6 +47,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/learningstream" element={<LearningStreams />} />
           <Route path="/adminDashboard" element={<AdminDashboard />} />
+          <Route path="/adminStartups" element={<Startups />} />
+          <Route path="/categoryPage" element={<CategoryPage />} />
         </Route>
 
         {/* Routes for Student */}
