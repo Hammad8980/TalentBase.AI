@@ -63,15 +63,15 @@
 }
 
 .avatar-icon {
-  border-radius: 50%;
-  padding: 7px;
+  border-radius: 100%;
+  padding: 8px;
   background-color: #008080;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 10px;
 }
 
@@ -124,13 +124,16 @@
   .menuItem {
     white-space: initial;
   }
+
 }
 
 @media (max-width: 989px) {
   .md-none {
     display: none;
   }
-
+  .avatar-icon {
+    margin-right: 20px;
+  }
  
 }
 
