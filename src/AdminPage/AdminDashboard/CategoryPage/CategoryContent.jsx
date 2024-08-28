@@ -2,7 +2,7 @@ import React from "react";
 import styles from './CategoryPage.module.css';
 import { Link } from "react-router-dom";
 
-function CategoryContent({onShow}) {
+function CategoryContent({onShowCategories, onShowBlogs}) {
   return (
     <section className={styles.categoryContent}>
       <h2 className={styles.categoryType}>Student</h2>
@@ -14,15 +14,21 @@ function CategoryContent({onShow}) {
               <div className={styles.separator} aria-hidden="true" />
               <span className={styles.detailItem}>UserId</span>
               <div className={styles.separator} aria-hidden="true" />
-              <span
+              <navLink
                 className={styles.detailItem}
-                onClick={onShow}
-                style={{ cursor: 'pointer', color: '#4169e1' }} // Add some styling to indicate it's clickable
+                onClick={onShowCategories}
+                style={{ cursor: 'pointer', color: '#4169e1' }} 
               >
                 Startups
-              </span>
+              </navLink>
               <div className={styles.separator} aria-hidden="true" />
-              <span className={styles.detailItem}>Blogs</span>
+              <Link
+                className={styles.detailItem}
+                onClick={onShowBlogs}
+                style={{ cursor: 'pointer', color: '#4169e1' }}
+              >
+                Blogs
+              </Link>
             </div>
           </div>
           <div className={styles.actionsColumn}>
