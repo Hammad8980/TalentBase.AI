@@ -1,4 +1,4 @@
-import DashboardData from './StudentComponents/StudentDashBoardComponents/DashBoardData';
+import DashboardData from './DashBoardData';
 import { Route, Routes } from 'react-router-dom';
 import "./StudentPages.css";
 

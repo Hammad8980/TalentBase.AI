@@ -1,4 +1,3 @@
-import '../StudentDashboard.css';
 
 function AcademicBackground ({academicBackground}) {
   const {YearOfCompletion = "Ø Undefined", CurrentEducation = "Ø Undefined",  Degree = "Ø Undefined"} = academicBackground;

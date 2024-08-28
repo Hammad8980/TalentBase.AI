@@ -1,11 +1,13 @@
-import React from 'react'
 
-const BusinessInformation = () => {
-    const Industry = "fake data is fake";
-    const BusinessModel = "fake data is fake";
-    const Products = "fake data is fake";
-    const TargetMarket = "fake data is fake";
-    const Picture = "fake data is fake";    
+const BusinessInformation = ({ businessInformation }) => {
+    const {
+        Industry = "Ø Undefined",
+        BusinessModel = "Ø Undefined",
+        Products = "Ø Undefined",
+        TargetMarket = "Ø Undefined",
+        Picture = "Ø Undefined"
+    } = businessInformation;
+
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Business Information</span></div>

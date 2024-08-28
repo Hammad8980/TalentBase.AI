@@ -1,4 +1,3 @@
-import '../StudentDashboard.css';
 
 function AchievementsAndAwards ({achievementsAndAwards}) {
   const {Achievements = "Ø Undefined", Awards = "Ø Undefined"} = achievementsAndAwards;

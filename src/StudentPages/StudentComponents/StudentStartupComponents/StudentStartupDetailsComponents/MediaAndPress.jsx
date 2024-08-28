@@ -1,9 +1,12 @@
-import React from 'react'
 
-const MediaAndPress = () => {
-    const PressReleases = "fake data is fake";
-    const MediaCoverage = "fake data is fake";
-    const AwardsAndRecognition = "fake data is fake";
+const MediaAndPress = ({mediaAndPress}) => {
+
+    const {
+        PressReleases = "Ø Undefined",
+        MediaCoverage = "Ø Undefined",
+        AwardsAndRecognition = "Ø Undefined"
+    } = mediaAndPress;
+
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Media & Press</span></div>

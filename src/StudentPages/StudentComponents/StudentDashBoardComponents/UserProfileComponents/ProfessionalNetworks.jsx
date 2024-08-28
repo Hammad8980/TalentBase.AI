@@ -1,4 +1,3 @@
-import '../StudentDashboard.css';
 
 function ProfessionalNetworks ({professionalNetworks}) {
   if (!professionalNetworks) return <div>No personal information available.</div>;

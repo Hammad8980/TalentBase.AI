@@ -1,4 +1,3 @@
-import '../StudentDashboard.css';
 
 function OpenToWork ({openToWork}) {
     const {Jobs = false, Projects = false, Internships = false, Funding = false, Acquisition = false, Collaborations = false} = openToWork;

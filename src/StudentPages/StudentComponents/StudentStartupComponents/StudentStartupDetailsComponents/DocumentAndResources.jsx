@@ -1,9 +1,10 @@
-import React from 'react'
 
-const DocumentAndResources = () => {
-    const PitchDeck = "fake data is fake";
-    const BusinessPlan = "fake data is fake";
-    const Videos = "fake data is fake";
+const DocumentAndResources = ({documentAndResources}) => {
+    const {
+        PitchDeck = "Ø Undefined",
+        BusinessPlan = "Ø Undefined",
+        Videos = "Ø Undefined"
+    } = documentAndResources;
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Document & Resources</span></div>

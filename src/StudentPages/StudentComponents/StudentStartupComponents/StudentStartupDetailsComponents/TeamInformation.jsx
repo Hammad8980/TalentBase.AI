@@ -1,9 +1,12 @@
-import React from 'react'
 
-const TeamInformation = () => {
-    const FoundingTeam = "fake data is fake";
-    const EmployeeCount = "fake data is fake";
-    const AdvisoryBoard = "fake data is fake";
+const TeamInformation = ({teamInformation}) => {
+
+    const {
+        FoundingTeam = "Ø Undefined",
+        EmployeeCount = "Ø Undefined",
+        AdvisoryBoard = "Ø Undefined"
+    } = teamInformation;
+ 
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Team Information</span></div>

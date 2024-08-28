@@ -1,10 +1,13 @@
-import React from 'react'
 
-const Traction = () => {
-    const Keymetrics = "fake data is fake";
-    const CustomerTestemonials = "fake data is fake";
-    const Milestones = "fake data is fake";
-    const UserGrowth = "fake data is fake";
+const Traction = ({traction}) => {
+
+    const {
+        Keymetrics = "Ø Undefined",
+        CustomerTestemonials = "Ø Undefined",
+        Milestones = "Ø Undefined",
+        UserGrowth = "Ø Undefined"
+    } = traction;
+
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Traction</span></div>

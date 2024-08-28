@@ -1,7 +1,5 @@
-import '../StudentDashboard.css';
 
 function PersonalStatement ({personalStatement}) {
-  if (!personalStatement) return <div>No personal information available.</div>;
   const {Goals = "Ø Undefined", Visions = "Ø Undefined", Biography = "Ø Undefined"} = personalStatement;
   return (
     <div className="student-portal-main-container">

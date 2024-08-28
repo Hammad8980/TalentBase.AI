@@ -1,4 +1,3 @@
-import '../StudentDashboard.css';
 
 function Publications ({publications}) {
     if (!publications) return <div>No personal information available.</div>;

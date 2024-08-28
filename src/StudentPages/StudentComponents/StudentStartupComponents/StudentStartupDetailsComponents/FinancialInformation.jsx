@@ -1,10 +1,14 @@
-import React from 'react'
 
-const FinancialInformation = () => {
-    const FundingStage = "fake data is fake";
-    const TotalFundingRaised = "fake data is fake";
-    const Revenue = "fake data is fake";
-    const Investors = "fake data is fake";
+
+const FinancialInformation = ({financialInformation}) => {
+
+    const {
+        FundingStage = "Ø Undefined",
+        TotalFundingRaised = "Ø Undefined",
+        Revenue = "Ø Undefined",
+        Investors = "Ø Undefined"
+    } = financialInformation;
+
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Financial Information</span></div>

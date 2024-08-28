@@ -1,41 +1,50 @@
 import React, { useState, useEffect, useRef } from 'react';
 import UseAuth from '../Hooks/useAuth';
 import './LogIn.css';
-import userData from '../Data';
+import axios from '../API/axios';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
-    const { auth, setAuth } = UseAuth();
+    const { setAuth } = UseAuth();
     const navigate = useNavigate();
     const location = useLocation();
-    
     const userRef = useRef();
-    
+    const URL = '/users/login';
+    let from = null;
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    
+
     useEffect(() => {
         userRef.current.focus();
     }, []);
-    
-    const handleSubmit = (e) => {
+
+    const handleSubmit = async (e) => {
         console.log("haha")
         e.preventDefault();
         console.log("hehe")
-        const foundUser = userData.users.find(user => user.Name === email && user.Password === password);
-        if (foundUser) {
-            console.log('Login successful!');
-            console.log(foundUser);
-            const role = [foundUser.Role];
-            const token = foundUser.Token;
-            setAuth({ email, password, role, token });
-            console.log(auth);
-            console.log(role);
-            const from = location.state?.from?.pathname || "/";
-            console.log(from)
-            navigate(from, { replace: true });
-            // Handle successful login (e.g., redirect to another page)
-        } else {
+        try {
+            const foundUser = await axios.post(
+                URL,
+                JSON.stringify({ email, password }),
+                {
+                    headers: { "Content-Type": 'application/json' }
+                }
+            );
+            const role = foundUser?.data?.role;
+            if (role) {
+                await setAuth({ role });
+                localStorage.setItem('userRole', role);
+                if (role === 'student') {
+                     from = location.state?.from?.pathname || "/studentdashboard";
+                }
+                console.log(from)
+                navigate(from, { replace: true });
+            } else {
+                console.log("No Role Found");
+            }
+        } catch (err) {
+            console.log(err);
             console.log('Invalid email or password.');
         }
     };

@@ -1,11 +1,10 @@
-import '../StudentDashboard.css';
 
 function PersonalInformation({personalInformation = {}}) {
   const { Name="Ø Undefined", Email="Ø Undefined", PhoneNumber="Ø Undefined", PersonalWebsite="Ø Undefined", LinkedIn="Ø Undefined", Location="Ø Undefined" } = personalInformation;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Personal Information</span></div>
-      <div className='student-portal-subdiv2'>
+      <div className='student-portal-subdiv2'> 
         <table className="student-portal-table">
           <tbody>
             <tr>

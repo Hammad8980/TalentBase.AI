@@ -1,10 +1,12 @@
-import React from 'react'
 
-const BasicInformation = () => {
-    const StartupName = "my Name";
-    const FoundedDate = "2/8/2001";
-    const Logo = "my logo";
-    const HeadQuaters = "the headquater";
+
+const BasicInformation = ({basicInformation}) => {
+    const {
+        StartupName = "Ø Undefined",
+        FoundedDate = "Ø Undefined",
+        Logo = "Ø Undefined",
+        HeadQuaters = "Ø Undefined"
+    } = basicInformation;
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Basic Information</span></div>

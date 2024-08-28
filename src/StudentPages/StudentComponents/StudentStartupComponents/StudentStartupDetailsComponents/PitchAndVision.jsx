@@ -1,9 +1,11 @@
-import React from 'react'
 
-const PitchAndVision = () => {
-    const ElevatorPitch = "fake data is fake";
-    const VisionStatement = "fake data is fake";
-    const UseOfFunds = "fake data is fake";
+const PitchAndVision = ({pitchAndVision}) => {
+
+    const {
+        ElevatorPitch = "Ø Undefined",
+        VisionStatement = "Ø Undefined",
+        UseOfFunds = "Ø Undefined"
+    } = pitchAndVision
     return (
         <div className="student-portal-main-container">
             <div className='student-portal-subdiv1 PrimaryColor1'><span>Pitch & Vision</span></div>

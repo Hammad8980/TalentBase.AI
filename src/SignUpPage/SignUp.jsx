@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './SignUp.css';
-
+import axios from '../API/axios';
 const SignUp = () => {
   const userRef = useRef();
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const URL = '/register';
 
   const [selectedRole, setSelectedRole] = useState('');
   const [userName, setUserName] = useState('');
@@ -12,15 +13,8 @@ const SignUp = () => {
   const [matchPassword, setMatchPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [checkEmail, setCheckEmail] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(selectedRole);
-    console.log(userName);
-    console.log(email);
-    console.log(password);
-    console.log(confirmPassword);
-  };
+  const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   useEffect(() => {
     userRef.current.focus();
@@ -33,6 +27,30 @@ const SignUp = () => {
   useEffect(() => {
     setMatchPassword(password === confirmPassword);
   }, [confirmPassword, password]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!checkEmail || !matchPassword) {
+      setError('Please correct the errors in the form.');
+      return;
+    }
+
+    try {
+      const response = await axios.post('/users/register', {
+        username: userName,
+        email,
+        password,
+        role: selectedRole,
+      });
+      setSuccessMessage('Registration successful! Please log in.');
+      setError('');
+    } catch (e) {
+      setError('Registration failed. Please try again.');
+      console.log(e);
+    }
+    console.log("success");
+  };
 
   return (
     <div className="signup-container">
@@ -111,6 +129,8 @@ const SignUp = () => {
           </div>
         </div>
         <button className="SignUpButton" type="submit">SIGN UP</button>
+        {error && <p className="error-message">{error}</p>}
+        {successMessage && <p className="success-message">{successMessage}</p>}
       </form>
       <div>
         <span>Already Registered? <a className="LogInLink" href="/login">Log In</a></span>

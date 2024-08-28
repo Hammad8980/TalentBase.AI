@@ -1,8 +1,6 @@
-import '../StudentDashboard.css';
 
-function ProfessionalBackground ({professionalBackground}) {
-  if (!professionalBackground) return <div>No personal information available.</div>;
-  const {CurrentPosition = "Ø Undefined", EducationalBackground = "Ø Undefined", Skills = "Ø Undefined"} = professionalBackground;
+function ProfessionalBackground({ professionalBackground }) {
+  const { CurrentPosition = "Ø Undefined", EducationalBackground = "Ø Undefined", Skills = "Ø Undefined" } = professionalBackground;
   return (
     <div className="student-portal-main-container">
       <div className='student-portal-subdiv1 PrimaryColor1'><span>Professional Background</span></div>

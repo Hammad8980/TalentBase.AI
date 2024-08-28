@@ -23,11 +23,6 @@
     font-size: larger;
 }
 
-
-.student-portal-main-container {
-    justify-content: center;
-}
-
 .stu-portal-box-main-div {
     background-color: white;
     border-radius: 20px;
@@ -37,6 +32,11 @@
     border-color: #008080;
     overflow: hidden;
 }
+
+.student-portal-main-container {
+    justify-content: center;
+}
+
 
 .student-portal-subdiv1 {
     width: fit-content;
@@ -57,12 +57,17 @@
 .student-portal-table {
     border-collapse: separate;
     border-spacing: 15px;
-    width: 50%;
+    flex-grow: 1;
+}
+
+.student-portal-table input {
+    border-radius: 10px;
 }
 
 
 .student-portal-table-td-heading {
     font-weight: bold;
+    vertical-align: top;
 }
 
 
@@ -107,14 +112,14 @@
     color: #008080;
 }
 
-.stu-blog-editor-publish-div {
+.stu-editor-update-button-div {
     display: flex;
     justify-content: center;
 }
 
-.stu-blog-editor-publish {
+.stu-editor-update-button {
     border-radius: 15px;
-    width: 15vw;
+    width: 150px;
     height: 6vh;
     color: white;
 }

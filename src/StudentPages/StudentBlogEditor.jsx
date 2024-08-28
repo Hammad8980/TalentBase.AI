@@ -143,8 +143,8 @@ const StudentBlogEditor = () => {
               ))}
             </div>
 
-            <div className='stu-blog-editor-publish-div'>
-              <button className='stu-blog-editor-publish SecondaryColor' onClick={Publish}>Publish</button>
+            <div className='stu-editor-update-button-div'>
+              <button className='stu-editor-update-button PrimaryColor1' onClick={Publish}>Publish</button>
             </div>
           </form>
         </div>
