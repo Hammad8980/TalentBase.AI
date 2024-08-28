@@ -3,6 +3,8 @@ import styles from './AdminDashboard.module.css';
 import SidebarMenuItem from './SidebarMenuItem';
 import StatItem from './StatItem';
 import InstructorAvatar from './InstructorAvatar';
+import { format } from 'date-fns';
+import { Link } from 'react-router-dom';
 
 const menuItems = [
   { icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/fa8eb16b0e57c2bd07d87dbe35685586c3275b2da3eaf85d2ccfba267df5fb9b?placeholderIfAbsent=true&apiKey=168c23e5e966425abe0e4b54edde3b42', text: 'Notifications' },
@@ -19,12 +21,15 @@ const stats = [
 ];
 
 function AdminDashboard() {
+  const currentDate = new Date();
+  const formattedDate = format(currentDate, 'do MMMM, yyyy');
+
   return (
     <div className={styles.adminDashboard}>
       <div className={styles.container}>
         <aside className={styles.sidebar}>
           <div className={styles.sidebarContent}>
-            <h2 className={styles.adminTitle}>ADMIN</h2>
+            <h2 className={styles.adminTitle}>ADMIN PORTAL</h2>
             <div className={styles.categoryWrapper}>
               <div className={styles.categoryIcon}>
                 <div className={styles.iconRow}>
@@ -36,7 +41,7 @@ function AdminDashboard() {
                   <div className={styles.iconDot} />
                 </div>
               </div>
-              <span className={styles.categoryText}>Category</span>
+              <Link to={"/categoryPage"}><span className={styles.categoryText}>Category</span></Link>
             </div>
             {menuItems.map((item, index) => (
               <SidebarMenuItem key={index} icon={item.icon} text={item.text} />
@@ -48,24 +53,17 @@ function AdminDashboard() {
           </div>
         </aside>
         <main className={styles.mainContent}>
-          <header className={styles.header}>
-            <input type="search" placeholder="Search" className={styles.searchInput} />
-            <div className={styles.userInfo}>
-              <div className={styles.userAvatar} />
-              <span className={styles.userName}>Adam</span>
-            </div>
-          </header>
           <section className={styles.welcomeSection}>
             <div className={styles.welcomeContent}>
               <div className={styles.container}>
                 <div className={styles.welcomeText}>
-                  <time dateTime="2024-12-25">25th December, 2024</time>
+                  <time dateTime="2024-12-25">{formattedDate}</time>
                   <h1 className={styles.welcomeHeading}>Welcome Adam!</h1>
                   <p className={styles.welcomeMessage}>
                     You are welcome to your Admin portal, stay updated!
                   </p>
                 </div>
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/323e3bcda08fdec726ab0b7006019703d986007e32aaa67ada528bbbc3bc703b?placeholderIfAbsent=true&apiKey=168c23e5e966425abe0e4b54edde3b42" alt="User profile" className={styles.userImage} />
+                <img src="./adminportal.png" alt="User profile" className={styles.userImage} />
               </div>
             </div>
           </section>
@@ -75,20 +73,22 @@ function AdminDashboard() {
                 <StatItem key={index} title={stat.title} />
               ))}
             </div>
-            <h2 className={styles.sectionTitle}>Courses</h2>
-            <h2 className={styles.instructorsTitle}>Course Instructors</h2>
-          </section>
+            </section>
           <section className={styles.chartSection}>
-            <div className={styles.container}>
+            <div className={styles.textContainer}>
+              <h2 className={styles.sectionTitle}>Courses</h2>
               <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/211566cfcf735addd3a697a130ac12524b97c73b74261ed40a9b7fe6e8818827?placeholderIfAbsent=true&apiKey=168c23e5e966425abe0e4b54edde3b42" alt="Chart" className={styles.chartImage} />
+            </div>
+            <div className={styles.container2}>
+              <h2 className={styles.instructorsTitle}>Course Instructors</h2>
               <div className={styles.instructorsList}>
                 <div className={styles.instructorGrid}>
-                  <InstructorAvatar />
-                  <InstructorAvatar />
+                  <InstructorAvatar className="item1"/>
+                  <InstructorAvatar className="item2"/>
                 </div>
                 <div className={styles.instructorGrid}>
-                  <InstructorAvatar />
-                  <InstructorAvatar />
+                  <InstructorAvatar className="item3"/>
+                  <InstructorAvatar className="item4"/>
                 </div>
                 <a href="#" className={styles.seeAllLink}>See All &gt;</a>
               </div>

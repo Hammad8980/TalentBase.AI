@@ -19,6 +19,7 @@ import StudentStartupDetails from './StudentPages/StudentStartupDetails';
 import StudentBlogEditor from './StudentPages/StudentBlogEditor';
 import StudentBlogs from './StudentPages/StudentBlogs';
 import AdminDashboard from './AdminPage/AdminDashboard/AdminDashboard'
+import CategoryPage from './AdminPage/AdminDashboard/CategoryPage/CategoryPage';
 import AcademiaDashBoard from './Components/AcademiaPages/AcademiaDashBoard';
 import IndustryDashBoard from './Components/IndustryPages/IndustryDashBoard';
 import Missing from './Components/Missing';
@@ -48,6 +49,8 @@ function App() {
           <Route path="/tnsfs" element={<TNSFS />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/adminDashboard" element={<AdminDashboard />} />
+          <Route path="/adminStartups" element={<Startups />} />
+          <Route path="/categoryPage" element={<CategoryPage />} />
         </Route>
 
         {/* Routes for Student */}
